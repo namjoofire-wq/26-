@@ -1,0 +1,405 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "책길 홈" [ref=e4] [cursor=pointer]:
+      - /url: "#home"
+      - img [ref=e6]
+      - generic [ref=e9]: 책길.
+    - tablist "주요 화면" [ref=e10]:
+      - tab "책 추천" [selected] [ref=e11] [cursor=pointer]
+      - tab "수행평가" [ref=e12] [cursor=pointer]
+      - tab "사용 안내" [ref=e13] [cursor=pointer]
+      - tab "검색 맞춤" [ref=e14] [cursor=pointer]
+      - tab "내 취향" [ref=e15] [cursor=pointer]
+      - tab "데이터" [ref=e16] [cursor=pointer]
+      - tab "추천 방식" [ref=e17] [cursor=pointer]
+    - button "공공데이터 연결 완료" [ref=e18]:
+      - generic [ref=e20]: 공공데이터 연결 완료
+  - main [ref=e21]:
+    - tabpanel "책 추천" [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic [ref=e25]: YOUR NEXT CHAPTER STARTS HERE
+          - heading "읽고 싶은 마음에 딱 맞는 책을 찾아드려요." [level=1] [ref=e27]:
+            - text: 읽고 싶은 마음에
+            - text: 딱 맞는 책을
+            - emphasis [ref=e28]: 찾아드려요.
+          - paragraph [ref=e29]:
+            - text: 관심 분야나 요즘 궁금한 키워드를 알려주시면
+            - text: 책의 내용과 주제를 살펴 추천해요.
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - img [ref=e32]
+              - generic [ref=e35]: 관심 분야 또는 키워드 입력
+              - searchbox "관심 분야 또는 키워드 입력" [ref=e36]
+              - button "책 추천받기" [ref=e37] [cursor=pointer]: 책 추천받기 ↗
+            - generic "추천 주제 빠르게 선택" [ref=e38]:
+              - generic [ref=e39]: 키워드를 골라 둘러보세요
+              - button "# 기후 변화" [ref=e40] [cursor=pointer]
+              - button "# 환경" [ref=e41] [cursor=pointer]
+              - button "# 인공지능" [ref=e42] [cursor=pointer]
+              - button "# 심리" [ref=e43] [cursor=pointer]
+              - button "# 바다" [ref=e44] [cursor=pointer]
+              - button "# 진로" [ref=e45] [cursor=pointer]
+              - button "# 경제" [ref=e46] [cursor=pointer]
+              - button "# 과학" [ref=e47] [cursor=pointer]
+              - button "# 역사" [ref=e48] [cursor=pointer]
+              - button "# 우정" [ref=e49] [cursor=pointer]
+              - button "# 사회" [ref=e50] [cursor=pointer]
+              - button "# 소설" [ref=e51] [cursor=pointer]
+            - button "수행평가 주제가 있나요? 수행평가 화면 열기" [ref=e52] [cursor=pointer]:
+              - generic [ref=e53]: 수행평가 주제가 있나요?
+              - generic [ref=e54]: 수행평가 화면 열기 ↗
+          - generic [ref=e55]:
+            - generic [ref=e56]: ✳
+            - text: 내 취향은 가볍게, 추천은 데이터답게
+        - generic "책과 독서에 대한 일러스트" [ref=e57]:
+          - generic [ref=e60]:
+            - text: 작은 발견이
+            - text: 큰 변화를 만들어요
+          - generic [ref=e62]:
+            - generic [ref=e63]: 생각의 지도
+            - generic [ref=e64]:
+              - text: IDEAS
+              - text: IN MOTION
+          - generic [ref=e66]:
+            - generic [ref=e67]: 천천히, 깊게
+            - generic [ref=e68]:
+              - text: READ
+              - text: YOUR WAY
+            - generic [ref=e70]: 책길 추천 도서
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - text: READ
+              - text: MORE
+            - generic [ref=e74]: ✳
+          - generic [ref=e75]:
+            - text: 오늘의 한 페이지가
+            - text: 내일의 나를 만듭니다.
+          - img [ref=e77]
+      - region "주제와 연결된 책을 찾아요." [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: THE READING LIST
+            - heading "주제와 연결된 책을 찾아요." [level=2] [ref=e84]
+            - paragraph [ref=e85]: 356개 데이터 레코드에서 같은 제목은 묶어 추천해요.
+          - generic [ref=e86]:
+            - generic [ref=e87]: "251"
+            - generic [ref=e88]: TITLES
+        - generic [ref=e89]:
+          - article [ref=e90] [cursor=pointer]:
+            - generic [ref=e91]:
+              - generic [ref=e92]: BOOK PATH · 01
+              - generic [ref=e93]: 흔한남매
+              - generic [ref=e94]: READING IS A JOURNEY
+            - generic [ref=e95]:
+              - generic [ref=e96]:
+                - text: 대출
+                - strong [ref=e97]: 438,712
+              - generic [ref=e98]: 문학 · KDC 810
+              - heading "흔한남매 상세 보기" [level=3] [ref=e99]:
+                - button "흔한남매 상세 보기" [ref=e100]: 흔한남매
+              - paragraph [ref=e101]: "원작: 흔한남매 ;그림: 유난희 · 2019"
+              - paragraph [ref=e102]: 문학 · KDC 810 분야에서 공공도서 대출 438,712건을 기록했어요.
+              - paragraph [ref=e103]:
+                - generic [ref=e104]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2019년
+              - generic [ref=e105]:
+                - generic [ref=e106]: 내 평가
+                - generic [ref=e107]:
+                  - button "흔한남매 1점으로 평가" [ref=e108]: ☆
+                  - button "흔한남매 2점으로 평가" [ref=e109]: ☆
+                  - button "흔한남매 3점으로 평가" [ref=e110]: ☆
+                  - button "흔한남매 4점으로 평가" [ref=e111]: ☆
+                  - button "흔한남매 5점으로 평가" [ref=e112]: ☆
+                - generic [ref=e113]: 별점 선택
+          - article [ref=e114] [cursor=pointer]:
+            - generic [ref=e115]:
+              - generic [ref=e116]: BOOK PATH · 02
+              - generic [ref=e117]: 흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식
+              - generic [ref=e118]: READING IS A JOURNEY
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - text: 대출
+                - strong [ref=e121]: 230,923
+              - generic [ref=e122]: 자연과학 · KDC 400
+              - heading "흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식 상세 보기" [level=3] [ref=e123]:
+                - button "흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식 상세 보기" [ref=e124]: 흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식
+              - paragraph [ref=e125]: "원작: 흔한남매 ;그림: 유난희 · 2020"
+              - paragraph [ref=e126]: 자연과학 · KDC 400 분야에서 공공도서 대출 230,923건을 기록했어요.
+              - paragraph [ref=e127]:
+                - generic [ref=e128]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2020년
+              - generic [ref=e129]:
+                - generic [ref=e130]: 내 평가
+                - generic [ref=e131]:
+                  - button "흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식 1점으로 평가" [ref=e132]: ☆
+                  - button "흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식 2점으로 평가" [ref=e133]: ☆
+                  - button "흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식 3점으로 평가" [ref=e134]: ☆
+                  - button "흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식 4점으로 평가" [ref=e135]: ☆
+                  - button "흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식 5점으로 평가" [ref=e136]: ☆
+                - generic [ref=e137]: 별점 선택
+          - article [ref=e138] [cursor=pointer]:
+            - generic [ref=e139]:
+              - generic [ref=e140]: BOOK PATH · 03
+              - generic [ref=e141]: 에그박사 :Egg&bugs
+              - generic [ref=e142]: READING IS A JOURNEY
+            - generic [ref=e143]:
+              - generic [ref=e144]:
+                - text: 대출
+                - strong [ref=e145]: 208,572
+              - generic [ref=e146]: 자연과학 · KDC 472
+              - heading "에그박사 :Egg&bugs 상세 보기" [level=3] [ref=e147]:
+                - button "에그박사 :Egg&bugs 상세 보기" [ref=e148]: 에그박사 :Egg&bugs
+              - paragraph [ref=e149]: "원작: 에그박사 ;그림: 홍종현 · 2020"
+              - paragraph [ref=e150]: 자연과학 · KDC 472 분야에서 공공도서 대출 208,572건을 기록했어요.
+              - paragraph [ref=e151]:
+                - generic [ref=e152]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2020년
+              - generic [ref=e153]:
+                - generic [ref=e154]: 내 평가
+                - generic [ref=e155]:
+                  - button "에그박사 :Egg&bugs 1점으로 평가" [ref=e156]: ☆
+                  - button "에그박사 :Egg&bugs 2점으로 평가" [ref=e157]: ☆
+                  - button "에그박사 :Egg&bugs 3점으로 평가" [ref=e158]: ☆
+                  - button "에그박사 :Egg&bugs 4점으로 평가" [ref=e159]: ☆
+                  - button "에그박사 :Egg&bugs 5점으로 평가" [ref=e160]: ☆
+                - generic [ref=e161]: 별점 선택
+          - article [ref=e162] [cursor=pointer]:
+            - generic [ref=e163]:
+              - generic [ref=e164]: BOOK PATH · 04
+              - generic [ref=e165]: 흔한남매 과학 탐험대
+              - generic [ref=e166]: READING IS A JOURNEY
+            - generic [ref=e167]:
+              - generic [ref=e168]:
+                - text: 대출
+                - strong [ref=e169]: 192,205
+              - generic [ref=e170]: 자연과학 · KDC 400
+              - heading "흔한남매 과학 탐험대 상세 보기" [level=3] [ref=e171]:
+                - button "흔한남매 과학 탐험대 상세 보기" [ref=e172]: 흔한남매 과학 탐험대
+              - paragraph [ref=e173]: "원작: 흔한남매 ;임혜영 · 2021"
+              - paragraph [ref=e174]: 자연과학 · KDC 400 분야에서 공공도서 대출 192,205건을 기록했어요.
+              - paragraph [ref=e175]:
+                - generic [ref=e176]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2021년
+              - generic [ref=e177]:
+                - generic [ref=e178]: 내 평가
+                - generic [ref=e179]:
+                  - button "흔한남매 과학 탐험대 1점으로 평가" [ref=e180]: ☆
+                  - button "흔한남매 과학 탐험대 2점으로 평가" [ref=e181]: ☆
+                  - button "흔한남매 과학 탐험대 3점으로 평가" [ref=e182]: ☆
+                  - button "흔한남매 과학 탐험대 4점으로 평가" [ref=e183]: ☆
+                  - button "흔한남매 과학 탐험대 5점으로 평가" [ref=e184]: ☆
+                - generic [ref=e185]: 별점 선택
+          - article [ref=e186] [cursor=pointer]:
+            - generic [ref=e187]:
+              - generic [ref=e188]: BOOK PATH · 05
+              - generic [ref=e189]: 고양이 해결사 깜냥
+              - generic [ref=e190]: READING IS A JOURNEY
+            - generic [ref=e191]:
+              - generic [ref=e192]:
+                - text: 대출
+                - strong [ref=e193]: 125,293
+              - generic [ref=e194]: 문학 · KDC 813.7
+              - heading "고양이 해결사 깜냥 상세 보기" [level=3] [ref=e195]:
+                - button "고양이 해결사 깜냥 상세 보기" [ref=e196]: 고양이 해결사 깜냥
+              - paragraph [ref=e197]: 홍민정 동화 ;김재희 그림 · 2020
+              - paragraph [ref=e198]: 문학 · KDC 813.7 분야에서 공공도서 대출 125,293건을 기록했어요.
+              - paragraph [ref=e199]:
+                - generic [ref=e200]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2020년
+              - generic [ref=e201]:
+                - generic [ref=e202]: 내 평가
+                - generic [ref=e203]:
+                  - button "고양이 해결사 깜냥 1점으로 평가" [ref=e204]: ☆
+                  - button "고양이 해결사 깜냥 2점으로 평가" [ref=e205]: ☆
+                  - button "고양이 해결사 깜냥 3점으로 평가" [ref=e206]: ☆
+                  - button "고양이 해결사 깜냥 4점으로 평가" [ref=e207]: ☆
+                  - button "고양이 해결사 깜냥 5점으로 평가" [ref=e208]: ☆
+                - generic [ref=e209]: 별점 선택
+          - article [ref=e210] [cursor=pointer]:
+            - generic [ref=e211]:
+              - generic [ref=e212]: BOOK PATH · 06
+              - generic [ref=e213]: 흔한남매 이상한 나라의 고전 읽기
+              - generic [ref=e214]: READING IS A JOURNEY
+            - generic [ref=e215]:
+              - generic [ref=e216]:
+                - text: 대출
+                - strong [ref=e217]: 109,416
+              - generic [ref=e218]: 문학 · KDC 813.5
+              - heading "흔한남매 이상한 나라의 고전 읽기 상세 보기" [level=3] [ref=e219]:
+                - button "흔한남매 이상한 나라의 고전 읽기 상세 보기" [ref=e220]: 흔한남매 이상한 나라의 고전 읽기
+              - paragraph [ref=e221]: 최재훈 글 ;정주연 그림 · 2022
+              - paragraph [ref=e222]: 문학 · KDC 813.5 분야에서 공공도서 대출 109,416건을 기록했어요.
+              - paragraph [ref=e223]:
+                - generic [ref=e224]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2022년
+              - generic [ref=e225]:
+                - generic [ref=e226]: 내 평가
+                - generic [ref=e227]:
+                  - button "흔한남매 이상한 나라의 고전 읽기 1점으로 평가" [ref=e228]: ☆
+                  - button "흔한남매 이상한 나라의 고전 읽기 2점으로 평가" [ref=e229]: ☆
+                  - button "흔한남매 이상한 나라의 고전 읽기 3점으로 평가" [ref=e230]: ☆
+                  - button "흔한남매 이상한 나라의 고전 읽기 4점으로 평가" [ref=e231]: ☆
+                  - button "흔한남매 이상한 나라의 고전 읽기 5점으로 평가" [ref=e232]: ☆
+                - generic [ref=e233]: 별점 선택
+          - article [ref=e234] [cursor=pointer]:
+            - generic [ref=e235]:
+              - generic [ref=e236]: BOOK PATH · 07
+              - generic [ref=e237]: 똥볶이 할멈 :K-히어로 판타지
+              - generic [ref=e238]: READING IS A JOURNEY
+            - generic [ref=e239]:
+              - generic [ref=e240]:
+                - text: 대출
+                - strong [ref=e241]: 94,620
+              - generic [ref=e242]: 문학 · KDC 813.7
+              - heading "똥볶이 할멈 :K-히어로 판타지 상세 보기" [level=3] [ref=e243]:
+                - button "똥볶이 할멈 :K-히어로 판타지 상세 보기" [ref=e244]: 똥볶이 할멈 :K-히어로 판타지
+              - paragraph [ref=e245]: "글: 강효미 ;그림: 김무연 · 2021"
+              - paragraph [ref=e246]: 문학 · KDC 813.7 분야에서 공공도서 대출 94,620건을 기록했어요.
+              - paragraph [ref=e247]:
+                - generic [ref=e248]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2021년
+              - generic [ref=e249]:
+                - generic [ref=e250]: 내 평가
+                - generic [ref=e251]:
+                  - button "똥볶이 할멈 :K-히어로 판타지 1점으로 평가" [ref=e252]: ☆
+                  - button "똥볶이 할멈 :K-히어로 판타지 2점으로 평가" [ref=e253]: ☆
+                  - button "똥볶이 할멈 :K-히어로 판타지 3점으로 평가" [ref=e254]: ☆
+                  - button "똥볶이 할멈 :K-히어로 판타지 4점으로 평가" [ref=e255]: ☆
+                  - button "똥볶이 할멈 :K-히어로 판타지 5점으로 평가" [ref=e256]: ☆
+                - generic [ref=e257]: 별점 선택
+          - article [ref=e258] [cursor=pointer]:
+            - generic [ref=e259]:
+              - generic [ref=e260]: BOOK PATH · 08
+              - generic [ref=e261]: 슈뻘맨의 숨은 과학 찾기 :엉뚱 도전 속에 숨은 과학 상식
+              - generic [ref=e262]: READING IS A JOURNEY
+            - generic [ref=e263]:
+              - generic [ref=e264]:
+                - text: 대출
+                - strong [ref=e265]: 82,058
+              - generic [ref=e266]: 자연과학 · KDC 400
+              - heading "슈뻘맨의 숨은 과학 찾기 :엉뚱 도전 속에 숨은 과학 상식 상세 보기" [level=3] [ref=e267]:
+                - button "슈뻘맨의 숨은 과학 찾기 :엉뚱 도전 속에 숨은 과학 상식 상세 보기" [ref=e268]: 슈뻘맨의 숨은 과학 찾기 :엉뚱 도전 속에 숨은 과학 상식
+              - paragraph [ref=e269]: 슈뻘맨 원작 ;류수형 그림 · 2023
+              - paragraph [ref=e270]: 자연과학 · KDC 400 분야에서 공공도서 대출 82,058건을 기록했어요.
+              - paragraph [ref=e271]:
+                - generic [ref=e272]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2023년
+              - generic [ref=e273]:
+                - generic [ref=e274]: 내 평가
+                - generic [ref=e275]:
+                  - button "슈뻘맨의 숨은 과학 찾기 :엉뚱 도전 속에 숨은 과학 상식 1점으로 평가" [ref=e276]: ☆
+                  - button "슈뻘맨의 숨은 과학 찾기 :엉뚱 도전 속에 숨은 과학 상식 2점으로 평가" [ref=e277]: ☆
+                  - button "슈뻘맨의 숨은 과학 찾기 :엉뚱 도전 속에 숨은 과학 상식 3점으로 평가" [ref=e278]: ☆
+                  - button "슈뻘맨의 숨은 과학 찾기 :엉뚱 도전 속에 숨은 과학 상식 4점으로 평가" [ref=e279]: ☆
+                  - button "슈뻘맨의 숨은 과학 찾기 :엉뚱 도전 속에 숨은 과학 상식 5점으로 평가" [ref=e280]: ☆
+                - generic [ref=e281]: 별점 선택
+          - article [ref=e282] [cursor=pointer]:
+            - generic [ref=e283]:
+              - generic [ref=e284]: BOOK PATH · 09
+              - generic [ref=e285]: (흔한남매) 별난 방탈출 :탈출 미션 스토리북
+              - generic [ref=e286]: READING IS A JOURNEY
+            - generic [ref=e287]:
+              - generic [ref=e288]:
+                - text: 대출
+                - strong [ref=e289]: 62,612
+              - generic [ref=e290]: 예술 · KDC 691
+              - heading "(흔한남매) 별난 방탈출 :탈출 미션 스토리북 상세 보기" [level=3] [ref=e291]:
+                - button "(흔한남매) 별난 방탈출 :탈출 미션 스토리북 상세 보기" [ref=e292]: (흔한남매) 별난 방탈출 :탈출 미션 스토리북
+              - paragraph [ref=e293]: 흔한남매 원작 ;차차 그림 · 2020
+              - paragraph [ref=e294]: 예술 · KDC 691 분야에서 공공도서 대출 62,612건을 기록했어요.
+              - paragraph [ref=e295]:
+                - generic [ref=e296]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2020년
+              - generic [ref=e297]:
+                - generic [ref=e298]: 내 평가
+                - generic [ref=e299]:
+                  - button "(흔한남매) 별난 방탈출 :탈출 미션 스토리북 1점으로 평가" [ref=e300]: ☆
+                  - button "(흔한남매) 별난 방탈출 :탈출 미션 스토리북 2점으로 평가" [ref=e301]: ☆
+                  - button "(흔한남매) 별난 방탈출 :탈출 미션 스토리북 3점으로 평가" [ref=e302]: ☆
+                  - button "(흔한남매) 별난 방탈출 :탈출 미션 스토리북 4점으로 평가" [ref=e303]: ☆
+                  - button "(흔한남매) 별난 방탈출 :탈출 미션 스토리북 5점으로 평가" [ref=e304]: ☆
+                - generic [ref=e305]: 별점 선택
+          - article [ref=e306] [cursor=pointer]:
+            - generic [ref=e307]:
+              - generic [ref=e308]: BOOK PATH · 10
+              - generic [ref=e309]: (흔한남매) 수수께끼 어드벤처 :수수께끼로 배우는 교과 지식
+              - generic [ref=e310]: READING IS A JOURNEY
+            - generic [ref=e311]:
+              - generic [ref=e312]:
+                - text: 대출
+                - strong [ref=e313]: 53,695
+              - generic [ref=e314]: 사회과학 · KDC 388
+              - heading "(흔한남매) 수수께끼 어드벤처 :수수께끼로 배우는 교과 지식 상세 보기" [level=3] [ref=e315]:
+                - button "(흔한남매) 수수께끼 어드벤처 :수수께끼로 배우는 교과 지식 상세 보기" [ref=e316]: (흔한남매) 수수께끼 어드벤처 :수수께끼로 배우는 교과 지식
+              - paragraph [ref=e317]: "원작: 흔한남매 ;그림: 도니패밀리 · 2022"
+              - paragraph [ref=e318]: 사회과학 · KDC 388 분야에서 공공도서 대출 53,695건을 기록했어요.
+              - paragraph [ref=e319]:
+                - generic [ref=e320]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2022년
+              - generic [ref=e321]:
+                - generic [ref=e322]: 내 평가
+                - generic [ref=e323]:
+                  - button "(흔한남매) 수수께끼 어드벤처 :수수께끼로 배우는 교과 지식 1점으로 평가" [ref=e324]: ☆
+                  - button "(흔한남매) 수수께끼 어드벤처 :수수께끼로 배우는 교과 지식 2점으로 평가" [ref=e325]: ☆
+                  - button "(흔한남매) 수수께끼 어드벤처 :수수께끼로 배우는 교과 지식 3점으로 평가" [ref=e326]: ☆
+                  - button "(흔한남매) 수수께끼 어드벤처 :수수께끼로 배우는 교과 지식 4점으로 평가" [ref=e327]: ☆
+                  - button "(흔한남매) 수수께끼 어드벤처 :수수께끼로 배우는 교과 지식 5점으로 평가" [ref=e328]: ☆
+                - generic [ref=e329]: 별점 선택
+          - article [ref=e330] [cursor=pointer]:
+            - generic [ref=e331]:
+              - generic [ref=e332]: BOOK PATH · 11
+              - generic [ref=e333]: 설민석의 한국사 대모험
+              - generic [ref=e334]: READING IS A JOURNEY
+            - generic [ref=e335]:
+              - generic [ref=e336]:
+                - text: 대출
+                - strong [ref=e337]: 49,802
+              - generic [ref=e338]: 역사 · KDC 911
+              - heading "설민석의 한국사 대모험 상세 보기" [level=3] [ref=e339]:
+                - button "설민석의 한국사 대모험 상세 보기" [ref=e340]: 설민석의 한국사 대모험
+              - paragraph [ref=e341]: "글: 설민석,그림: 정현희 · 2022"
+              - paragraph [ref=e342]: 역사 · KDC 911 분야에서 공공도서 대출 49,802건을 기록했어요.
+              - paragraph [ref=e343]:
+                - generic [ref=e344]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2022년
+              - generic [ref=e345]:
+                - generic [ref=e346]: 내 평가
+                - generic [ref=e347]:
+                  - button "설민석의 한국사 대모험 1점으로 평가" [ref=e348]: ☆
+                  - button "설민석의 한국사 대모험 2점으로 평가" [ref=e349]: ☆
+                  - button "설민석의 한국사 대모험 3점으로 평가" [ref=e350]: ☆
+                  - button "설민석의 한국사 대모험 4점으로 평가" [ref=e351]: ☆
+                  - button "설민석의 한국사 대모험 5점으로 평가" [ref=e352]: ☆
+                - generic [ref=e353]: 별점 선택
+          - article [ref=e354] [cursor=pointer]:
+            - generic [ref=e355]:
+              - generic [ref=e356]: BOOK PATH · 12
+              - generic [ref=e357]: 흔한남매 이무기 :이해하면 무서운 이야기
+              - generic [ref=e358]: READING IS A JOURNEY
+            - generic [ref=e359]:
+              - generic [ref=e360]:
+                - text: 대출
+                - strong [ref=e361]: 45,673
+              - generic [ref=e362]: 문학 · KDC 810
+              - heading "흔한남매 이무기 :이해하면 무서운 이야기 상세 보기" [level=3] [ref=e363]:
+                - button "흔한남매 이무기 :이해하면 무서운 이야기 상세 보기" [ref=e364]: 흔한남매 이무기 :이해하면 무서운 이야기
+              - paragraph [ref=e365]: "원작: 흔한남매 ;그림: 도니패밀리 · 2023"
+              - paragraph [ref=e366]: 문학 · KDC 810 분야에서 공공도서 대출 45,673건을 기록했어요.
+              - paragraph [ref=e367]:
+                - generic [ref=e368]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2023년
+              - generic [ref=e369]:
+                - generic [ref=e370]: 내 평가
+                - generic [ref=e371]:
+                  - button "흔한남매 이무기 :이해하면 무서운 이야기 1점으로 평가" [ref=e372]: ☆
+                  - button "흔한남매 이무기 :이해하면 무서운 이야기 2점으로 평가" [ref=e373]: ☆
+                  - button "흔한남매 이무기 :이해하면 무서운 이야기 3점으로 평가" [ref=e374]: ☆
+                  - button "흔한남매 이무기 :이해하면 무서운 이야기 4점으로 평가" [ref=e375]: ☆
+                  - button "흔한남매 이무기 :이해하면 무서운 이야기 5점으로 평가" [ref=e376]: ☆
+                - generic [ref=e377]: 별점 선택
+        - button "더 많은 책 보기 (12권)" [ref=e378] [cursor=pointer]
+  - contentinfo [ref=e379]:
+    - button "책길." [ref=e380] [cursor=pointer]
+    - paragraph [ref=e381]: 공공데이터로 이어가는 나만의 독서 여정
+    - generic [ref=e382]: A SMALL STEP INTO A BIGGER WORLD OF BOOKS

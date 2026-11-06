@@ -1,0 +1,218 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "책길 홈" [ref=e4] [cursor=pointer]:
+      - /url: "#home"
+      - img [ref=e6]
+      - generic [ref=e9]: 책길.
+    - navigation "주요 메뉴" [ref=e10]:
+      - link "책 발견하기" [ref=e11] [cursor=pointer]:
+        - /url: "#discover"
+      - link "추천 방식" [ref=e12] [cursor=pointer]:
+        - /url: "#how-it-works"
+    - link "국립중앙도서관 데이터 연결 완료" [ref=e13] [cursor=pointer]:
+      - /url: "#data-panel"
+      - generic [ref=e15]: 국립중앙도서관 데이터 연결 완료
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]: YOUR NEXT CHAPTER STARTS HERE
+        - heading "읽고 싶은 마음에 딱 맞는 책을 찾아드려요." [level=1] [ref=e21]:
+          - text: 읽고 싶은 마음에
+          - text: 딱 맞는 책을
+          - emphasis [ref=e22]: 찾아드려요.
+        - paragraph [ref=e23]:
+          - text: 관심사를 알려주시면 공공도서 데이터에서
+          - text: 지금 당신에게 어울리는 책을 골라볼게요.
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - img [ref=e26]
+            - generic [ref=e29]: 관심 분야 입력
+            - searchbox "관심 분야 입력" [ref=e30]
+            - button "책 추천받기" [ref=e31] [cursor=pointer]: 책 추천받기 ↗
+          - generic "추천 주제 빠르게 선택" [ref=e32]:
+            - generic [ref=e33]: 이런 주제는 어때요
+            - button "# 진로" [ref=e34] [cursor=pointer]
+            - button "# 마음챙김" [ref=e35] [cursor=pointer]
+            - button "# 데이터" [ref=e36] [cursor=pointer]
+            - button "# 소설" [ref=e37] [cursor=pointer]
+        - generic [ref=e38]:
+          - generic [ref=e39]: ✳
+          - text: 내 취향은 가볍게, 추천은 데이터답게
+      - generic "책과 독서에 대한 일러스트" [ref=e40]:
+        - generic [ref=e43]:
+          - text: 작은 발견이
+          - text: 큰 변화를 만들어요
+        - generic [ref=e45]:
+          - generic [ref=e46]: 생각의 지도
+          - generic [ref=e47]:
+            - text: IDEAS
+            - text: IN MOTION
+        - generic [ref=e49]:
+          - generic [ref=e50]: 천천히, 깊게
+          - generic [ref=e51]:
+            - text: READ
+            - text: YOUR WAY
+          - generic [ref=e53]: 책길 추천 도서
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - text: READ
+            - text: MORE
+          - generic [ref=e57]: ✳
+        - generic [ref=e58]:
+          - text: 오늘의 한 페이지가
+          - text: 내일의 나를 만듭니다.
+        - img [ref=e60]
+    - region "지금, 이런 책은 어때요." [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]: THE READING LIST
+          - heading "지금, 이런 책은 어때요." [level=2] [ref=e67]
+          - paragraph [ref=e68]: 업로드한 정보나루 도서 데이터에서 대출 지표를 반영했어요.
+        - generic [ref=e69]:
+          - generic [ref=e70]: "06"
+          - generic [ref=e71]: BOOKS
+      - generic [ref=e72]:
+        - article [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]: BOOK PATH · 01
+            - generic [ref=e76]: 소년이 온다 :한강 장편소설
+            - generic [ref=e77]: READING IS A JOURNEY
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - text: 대출
+              - strong [ref=e80]: 36,900
+            - generic [ref=e81]: 문학 · KDC 813.62
+            - heading "소년이 온다 :한강 장편소설" [level=3] [ref=e82]
+            - paragraph [ref=e83]: "지은이: 한강 · 2014"
+            - paragraph [ref=e84]:
+              - generic [ref=e85]: ✳
+              - text: 공공데이터 대출 상위 도서 · 2014년
+        - article [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: BOOK PATH · 02
+            - generic [ref=e89]: 안녕이라 그랬어 :김애란 소설
+            - generic [ref=e90]: READING IS A JOURNEY
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - text: 대출
+              - strong [ref=e93]: 32,497
+            - generic [ref=e94]: 문학 · KDC 813.7
+            - heading "안녕이라 그랬어 :김애란 소설" [level=3] [ref=e95]
+            - paragraph [ref=e96]: "지은이: 김애란 · 2025"
+            - paragraph [ref=e97]:
+              - generic [ref=e98]: ✳
+              - text: 공공데이터 대출 상위 도서 · 2025년
+        - article [ref=e99]:
+          - generic [ref=e100]:
+            - generic [ref=e101]: BOOK PATH · 03
+            - generic [ref=e102]: 혼모노 :성해나 소설집
+            - generic [ref=e103]: READING IS A JOURNEY
+          - generic [ref=e104]:
+            - generic [ref=e105]:
+              - text: 대출
+              - strong [ref=e106]: 30,125
+            - generic [ref=e107]: 문학 · KDC 813.7
+            - heading "혼모노 :성해나 소설집" [level=3] [ref=e108]
+            - paragraph [ref=e109]: "지은이: 성해나 · 2025"
+            - paragraph [ref=e110]:
+              - generic [ref=e111]: ✳
+              - text: 공공데이터 대출 상위 도서 · 2025년
+        - article [ref=e112]:
+          - generic [ref=e113]:
+            - generic [ref=e114]: BOOK PATH · 04
+            - generic [ref=e115]: 모순 :양귀자 장편소설
+            - generic [ref=e116]: READING IS A JOURNEY
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - text: 대출
+              - strong [ref=e119]: 27,343
+            - generic [ref=e120]: 문학 · KDC 813.62
+            - heading "모순 :양귀자 장편소설" [level=3] [ref=e121]
+            - paragraph [ref=e122]: "지은이: 양귀자 · 2013"
+            - paragraph [ref=e123]:
+              - generic [ref=e124]: ✳
+              - text: 공공데이터 대출 상위 도서 · 2013년
+        - article [ref=e125]:
+          - generic [ref=e126]:
+            - generic [ref=e127]: BOOK PATH · 05
+            - generic [ref=e128]: 작별하지 않는다 :한강 장편소설
+            - generic [ref=e129]: READING IS A JOURNEY
+          - generic [ref=e130]:
+            - generic [ref=e131]:
+              - text: 대출
+              - strong [ref=e132]: 26,785
+            - generic [ref=e133]: 문학 · KDC 813.62
+            - heading "작별하지 않는다 :한강 장편소설" [level=3] [ref=e134]
+            - paragraph [ref=e135]: "지은이: 한강 · 2021"
+            - paragraph [ref=e136]:
+              - generic [ref=e137]: ✳
+              - text: 공공데이터 대출 상위 도서 · 2021년
+        - article [ref=e138]:
+          - generic [ref=e139]:
+            - generic [ref=e140]: BOOK PATH · 06
+            - generic [ref=e141]: 불편한 편의점 :김호연 장편소설
+            - generic [ref=e142]: READING IS A JOURNEY
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - text: 대출
+              - strong [ref=e145]: 26,687
+            - generic [ref=e146]: 문학 · KDC 813.7
+            - heading "불편한 편의점 :김호연 장편소설" [level=3] [ref=e147]
+            - paragraph [ref=e148]: "지은이: 김호연 · 2021"
+            - paragraph [ref=e149]:
+              - generic [ref=e150]: ✳
+              - text: 공공데이터 대출 상위 도서 · 2021년
+    - generic [ref=e151]:
+      - generic [ref=e152]:
+        - generic [ref=e153]: POWERED BY PUBLIC DATA
+        - heading "좋은 추천의 시작은 좋은 데이터니까요." [level=2] [ref=e155]:
+          - text: 좋은 추천의 시작은
+          - emphasis [ref=e156]: 좋은 데이터
+          - text: 니까요.
+        - paragraph [ref=e157]:
+          - text: 국립중앙도서관의 대출 순위 데이터를 기본으로 사용해요.
+          - text: 다른 공공데이터 CSV를 올려 목록을 바꿀 수도 있어요.
+        - generic [ref=e158]:
+          - generic [ref=e159]: ↗
+          - generic [ref=e160]:
+            - generic [ref=e161]: 국립중앙도서관 도서 대출 순위
+            - generic [ref=e162]: 저작자표시(BY) · 제공일 2026-10-31
+      - generic [ref=e163]:
+        - generic [ref=e164]:
+          - generic [ref=e165]: DATA PLAYGROUND
+          - generic [ref=e167]: CSV FILE
+        - img [ref=e169]
+        - heading "기본 공공데이터 연결 완료" [level=3] [ref=e173]
+        - paragraph [ref=e174]: 국립중앙도서관 대출 순위 데이터가 기본 적용됐어요. 다른 CSV로 바꿔볼 수도 있어요.
+        - generic [ref=e175] [cursor=pointer]:
+          - text: CSV 파일 선택
+          - generic [ref=e176]: ＋
+        - generic [ref=e177]:
+          - generic [ref=e178]: ✓
+          - text: 파일은 서버로 전송되지 않아요
+          - text: 최대 20MB
+        - generic [ref=e180]: BestLoanList_20261031091317.csv · 도서 200권 · 11개 항목
+    - generic [ref=e181]:
+      - generic [ref=e182]:
+        - generic [ref=e183]: HOW IT WORKS
+        - heading "데이터로 취향을 읽는 세 단계" [level=2] [ref=e184]:
+          - text: 데이터로 취향을
+          - text: 읽는 세 단계
+      - generic [ref=e185]:
+        - text: "01"
+        - heading "관심사 입력" [level=3] [ref=e186]
+        - paragraph [ref=e187]: 요즘 궁금한 주제나 읽고 싶은 분야를 알려주세요.
+      - generic [ref=e188]:
+        - text: "02"
+        - heading "데이터 분석" [level=3] [ref=e189]
+        - paragraph [ref=e190]: 책의 제목·주제와 대출 데이터를 함께 살펴봐요.
+      - generic [ref=e191]:
+        - text: "03"
+        - heading "맞춤 책 발견" [level=3] [ref=e192]
+        - paragraph [ref=e193]: 왜 추천했는지 이유와 함께 책을 소개해요.
+      - paragraph [ref=e194]: 현재 추천은 관심 키워드 적합도와 대출 지표를 조합해 계산해요. 사용자 평가 데이터가 쌓이면 학습형 추천 모델로 발전시킬 수 있어요.
+  - contentinfo [ref=e195]:
+    - link "책길." [ref=e196] [cursor=pointer]:
+      - /url: "#home"
+    - paragraph [ref=e197]: 공공데이터로 이어가는 나만의 독서 여정
+    - generic [ref=e198]: A SMALL STEP INTO A BIGGER WORLD OF BOOKS

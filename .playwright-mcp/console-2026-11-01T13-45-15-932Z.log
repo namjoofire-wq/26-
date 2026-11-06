@@ -1,0 +1,5 @@
+[      36ms] [INFO] [preview-bridge] v1.1.0 @ https://8d9w1ikmsqehy46z.jitda.io/__preview-bridge.js:1
+[   12080ms] [WARNING] Warning: Parameter not found: segsearch_max_char_wh_ratio @ https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-simd-lstm.wasm.js:30
+[   12178ms] [WARNING] Warning: Parameter not found: allow_blob_division @ https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-simd-lstm.wasm.js:30
+[   12178ms] [WARNING] Warning: Parameter not found: assume_fixed_pitch_char_segment @ https://cdn.jsdelivr.net/npm/tesseract.js-core@v5.1.1/tesseract-core-simd-lstm.wasm.js:30
+[   14486ms] [INFO] [preview-bridge] v1.1.0 @ https://8d9w1ikmsqehy46z.jitda.io/__preview-bridge.js:1

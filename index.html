@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <title>책길 - 나에게 맞는 책을 발견하는 방법</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="책길 홈">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M5 7.5c4.2-.9 7.8-.2 11 2.1v16c-3.2-2.3-6.8-3-11-2.1v-16Z" fill="currentColor"/><path d="M27 7.5c-4.2-.9-7.8-.2-11 2.1v16c3.2-2.3 6.8-3 11-2.1v-16Z" fill="currentColor" opacity=".55"/><path d="M16 10v16" stroke="#F5F2EB" stroke-width="1.5"/></svg>
+        </span>
+        <span class="brand-name">책길<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="top-nav" aria-label="주요 화면" role="tablist">
+        <button class="nav-link active" id="tab-discover" type="button" role="tab" aria-selected="true" aria-controls="view-discover" data-view-target="discover">책 추천</button>
+        <button class="nav-link" id="tab-project" type="button" role="tab" aria-selected="false" aria-controls="view-project" data-view-target="project">수행평가</button>
+        <button class="nav-link" id="tab-guide" type="button" role="tab" aria-selected="false" aria-controls="view-guide" data-view-target="guide">사용 안내</button>
+        <button class="nav-link" id="tab-history" type="button" role="tab" aria-selected="false" aria-controls="view-history" data-view-target="history">검색 맞춤</button>
+        <button class="nav-link" id="tab-taste" type="button" role="tab" aria-selected="false" aria-controls="view-taste" data-view-target="taste">내 취향</button>
+        <button class="nav-link" id="tab-data" type="button" role="tab" aria-selected="false" aria-controls="view-data" data-view-target="data">데이터</button>
+        <button class="nav-link" id="tab-method" type="button" role="tab" aria-selected="false" aria-controls="view-method" data-view-target="method">추천 방식</button>
+      </nav>
+      <button class="data-link" type="button" data-view-target="data"><span class="live-dot"></span><span id="data-status">CSV로 공공데이터 연결</span></button>
+    </header>
+
+    <main id="home">
+      <div class="app-view" id="view-discover" data-view="discover" role="tabpanel" aria-labelledby="tab-discover">
+      <section class="intro-grid" id="discover">
+        <div class="intro-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span>YOUR NEXT CHAPTER STARTS HERE</div>
+          <h1>읽고 싶은 마음에<br>딱 맞는 책을 <em>찾아드려요.</em></h1>
+          <p class="intro-text">관심 분야나 요즘 궁금한 키워드를 알려주시면<br class="desktop-break"> 책의 내용과 주제를 살펴 추천해요.</p>
+          <div class="search-wrap">
+            <form id="search-form" class="search-box">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              <label class="visually-hidden" for="interest-input">관심 분야 또는 키워드 입력</label>
+              <input id="interest-input" type="search" placeholder="요즘 관심 있는 분야를 입력해 보세요" autocomplete="off">
+              <button type="submit" class="search-submit">책 추천받기 <span aria-hidden="true">↗</span></button>
+            </form>
+            <div class="quick-topics" aria-label="추천 주제 빠르게 선택">
+              <span class="quick-label">키워드를 골라 둘러보세요</span>
+              <button class="topic-chip" type="button" data-topic="기후 변화"># 기후 변화</button>
+              <button class="topic-chip" type="button" data-topic="환경"># 환경</button>
+              <button class="topic-chip" type="button" data-topic="인공지능"># 인공지능</button>
+              <button class="topic-chip" type="button" data-topic="심리"># 심리</button>
+              <button class="topic-chip" type="button" data-topic="바다"># 바다</button>
+              <button class="topic-chip" type="button" data-topic="진로"># 진로</button>
+              <button class="topic-chip" type="button" data-topic="경제"># 경제</button>
+              <button class="topic-chip" type="button" data-topic="과학"># 과학</button>
+              <button class="topic-chip" type="button" data-topic="역사"># 역사</button>
+              <button class="topic-chip" type="button" data-topic="우정"># 우정</button>
+              <button class="topic-chip" type="button" data-topic="사회"># 사회</button>
+              <button class="topic-chip" type="button" data-topic="소설"># 소설</button>
+            </div>
+            <button class="project-topic-trigger" type="button" data-view-target="project"><span>수행평가 주제가 있나요?</span><span class="project-trigger-action">수행평가 화면 열기 <span aria-hidden="true">↗</span></span></button>
+          </div>
+          <div class="intro-footnote"><span class="sparkle" aria-hidden="true">✳</span> 내 취향은 가볍게, 추천은 데이터답게</div>
+        </div>
+        <div class="hero-art" aria-label="책과 독서에 대한 일러스트">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-label label-top">작은 발견이<br>큰 변화를 만들어요</div>
+          <div class="hero-book book-back"><span>생각의 지도</span><i>IDEAS<br>IN MOTION</i></div>
+          <div class="hero-book book-front"><span>천천히, 깊게</span><i>READ<br>YOUR WAY</i><b>책길 추천 도서</b></div>
+          <div class="art-stamp"><span>READ<br>MORE</span><span class="stamp-star">✳</span></div>
+          <div class="art-label label-bottom">오늘의 한 페이지가<br>내일의 나를 만듭니다.</div>
+          <svg class="art-squiggle" viewBox="0 0 120 54" fill="none" aria-hidden="true"><path d="M3 39c18-26 30 20 48-7S77 3 91 23s19 18 26 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6"/></svg>
+        </div>
+      </section>
+
+      <section class="recommend-section" aria-labelledby="recommend-heading">
+        <div class="section-heading-row">
+          <div>
+            <div class="section-kicker">THE READING LIST <span class="kicker-rule"></span></div>
+            <h2 id="recommend-heading">주제와 연결된 책을 찾아요<span class="heading-period">.</span></h2>
+            <p class="result-caption" id="result-caption">예시 도서로 미리 둘러보고, CSV를 올려 실제 공공데이터를 분석해 보세요.</p>
+          </div>
+          <div class="result-count"><span id="result-count">06</span><small id="result-count-label">TITLES</small></div>
+        </div>
+        <div class="difficulty-controls">
+          <div><span class="difficulty-control-title">원하는 책 난이도</span><span class="difficulty-control-note">학생 수행평가용 예상 수준</span></div>
+          <label for="difficulty-filter" class="visually-hidden">책 난이도 필터</label>
+          <select id="difficulty-filter">
+            <option value="all">모든 난이도</option>
+            <option value="basic">기초</option>
+            <option value="standard">보통</option>
+            <option value="challenging">도전</option>
+          </select>
+        </div>
+        <section class="best3-section" id="best3-section" aria-labelledby="best3-heading" hidden>
+          <div class="best3-heading"><div><span class="section-kicker">BEST MATCHES FOR YOUR ASSIGNMENT</span><h3 id="best3-heading">수행평가 조건에 맞는 추천 BEST 3</h3><p>과목·주제·탐구 방향을 함께 반영해 먼저 골랐어요.</p></div><span class="best3-stamp">TOP<br>3</span></div>
+          <div class="book-grid best3-grid" id="best3-grid"></div>
+        </section>
+        <div class="other-books-heading" id="other-books-heading" hidden><h3>그 외 관련 도서</h3><span id="other-books-count"></span></div>
+        <div class="book-grid" id="book-grid" aria-live="polite"></div>
+        <section class="analysis-report" id="analysis-report" aria-labelledby="analysis-report-title" hidden aria-live="polite"></section>
+        <section class="balanced-bundle" id="balanced-bundle" aria-labelledby="bundle-title" hidden></section>
+        <button class="show-more-button" id="show-more-button" type="button" hidden>더 많은 책 보기</button>
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-mark">?</span>
+          <h3>아직 꼭 맞는 책을 찾지 못했어요.</h3>
+          <p>다른 관심사를 입력하거나 CSV에 책 제목과 주제 정보가 있는지 확인해 주세요.</p>
+        </div>
+      </section>
+      </div>
+
+      <div class="app-view" id="view-book-detail" data-view="book-detail" role="tabpanel" aria-labelledby="tab-discover" hidden>
+        <section class="detail-page">
+          <button class="detail-back" id="detail-back" type="button"><span aria-hidden="true">←</span> 추천 결과로 돌아가기</button>
+          <div id="book-detail-content"></div>
+      </section>
+      </div>
+
+      <div class="app-view" id="view-project" data-view="project" role="tabpanel" aria-labelledby="tab-project" hidden>
+        <section class="project-page">
+          <div class="project-page-copy">
+            <div class="section-kicker">PROJECT BOOK FINDER <span class="kicker-rule"></span></div>
+            <h2>수행평가 주제에서<br><em>읽을 책의 실마리를 찾아요.</em></h2>
+            <p>과목·수행평가 주제·탐구 방향을 함께 분석해 관련 도서를 추천합니다. 중·고등학생 이상이 수행평가에 활용할 일반·청소년 도서를 우선해요.</p>
+            <div class="project-promise"><span>01</span> 과목 맥락과 주제 핵심 키워드 정리</div>
+            <div class="project-promise"><span>02</span> 탐구 방향에 맞는 책과 추천 근거 확인</div>
+            <div class="project-promise"><span>03</span> 입문·다른 관점·심화 책 조합</div>
+          </div>
+          <div class="project-form-card">
+            <form id="project-search-form" class="project-search-form">
+              <label for="project-subject-input">과목</label>
+              <input id="project-subject-input" type="text" placeholder="예: 통합사회" list="subject-suggestions" autocomplete="off">
+              <datalist id="subject-suggestions">
+                <option value="통합사회"></option><option value="국어"></option><option value="사회"></option><option value="역사"></option><option value="과학"></option><option value="수학"></option>
+              </datalist>
+              <label for="project-topic-input">수행평가 주제 또는 탐구 질문</label>
+              <input id="project-topic-input" type="search" placeholder="예: 기후 변화가 바다 생태계에 미치는 영향" autocomplete="off" required>
+              <label for="project-direction-input">탐구 방향</label>
+              <textarea id="project-direction-input" rows="3" placeholder="예: 인공지능의 긍정적·부정적 영향을 비교 분석"></textarea>
+              <div class="project-rubric-upload">
+                <div><label for="rubric-file">선생님 평가 기준표 파일 <span>(선택)</span></label><p>Affine JSON, CSV UTF-8, JPG·PNG·WebP 사진을 올려주세요. CSV는 ‘평가 항목’과 ‘배점’ 열을 읽어요.</p></div>
+                <div class="rubric-file-control"><input id="rubric-file" type="file" accept=".csv,.json,.txt,.png,.jpg,.jpeg,.webp,application/json,text/csv,text/plain,image/png,image/jpeg,image/webp" hidden><label class="rubric-file-button" for="rubric-file">기준표 파일 선택</label><span id="rubric-file-name">선택된 파일 없음</span></div>
+                <p id="rubric-progress" class="rubric-progress" hidden></p>
+                <div id="rubric-preview" class="rubric-preview" hidden></div>
+                <p id="rubric-error" class="rubric-error" role="alert" hidden></p>
+                <small class="rubric-privacy">사진은 브라우저에서 OCR로 읽혀요. 처음에는 인터넷 연결이 필요하고 사진 파일은 서버로 전송하지 않아요. 글자가 선명하고 반듯한 사진을 사용해 주세요. PDF는 지원하지 않아요.</small>
+              </div>
+              <div class="project-examples" aria-label="수행평가 주제 예시">
+                <button type="button" data-project-topic="기후 변화와 바다 생태계">기후 변화와 바다</button>
+                <button type="button" data-project-topic="인공지능과 일자리">인공지능과 일자리</button>
+                <button type="button" data-project-topic="청소년의 마음 건강">청소년 마음 건강</button>
+              </div>
+              <button class="search-submit project-submit" type="submit">주제에 맞는 책 찾기 <span aria-hidden="true">↗</span></button>
+            </form>
+            <p class="project-form-note">평가 기준표를 올리면 배점이 높은 항목을 추천에 더 크게 반영해요. 과목·주제·탐구 방향도 함께 살펴봅니다.</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="app-view" id="view-history" data-view="history" role="tabpanel" aria-labelledby="tab-history" hidden>
+      <section class="history-reco-section" aria-labelledby="history-reco-heading">
+        <div class="section-heading-row history-reco-heading">
+          <div>
+            <div class="section-kicker">YOUR SEARCH PATTERN <span class="kicker-rule"></span></div>
+            <h2 id="history-reco-heading">내 검색이 쌓이는 맞춤 추천<span class="heading-period">.</span></h2>
+            <p class="result-caption" id="history-reco-caption">검색한 키워드와 관심 분야를 바탕으로 나만의 추천을 만들어요.</p>
+          </div>
+          <div class="result-count"><span id="history-search-count">00</span><small>SEARCHES</small></div>
+        </div>
+        <div class="history-keywords" id="history-keywords" aria-label="자주 검색한 키워드"></div>
+        <div class="history-recommendation-grid" id="history-recommendations" aria-live="polite"></div>
+        <div class="history-empty" id="history-empty">
+          <span class="history-empty-mark">⌕</span>
+          <p>아직 검색 기록이 없어요. 관심 키워드를 검색하면 이 공간에 맞춤 책이 쌓입니다.</p>
+        </div>
+        <div class="history-reco-footer"><p>검색 기록은 이 기기에만 저장되며 다른 사용자와 공유되지 않아요.</p><button id="clear-search-history" type="button" hidden>검색 기록 지우기</button></div>
+      </section>
+      </div>
+
+      <div class="app-view" id="view-taste" data-view="taste" role="tabpanel" aria-labelledby="tab-taste" hidden>
+      <section class="taste-section" aria-labelledby="taste-heading">
+        <div class="taste-intro">
+          <div class="section-kicker">YOUR READING SIGNALS <span class="kicker-rule"></span></div>
+          <h2 id="taste-heading">별점이 쌓이면<br><em>추천도 나다워져요.</em></h2>
+          <p>추천 카드의 별을 눌러 읽은 책을 평가해 보세요. 이전 평가와 비슷한 주제의 도서 인기도를 함께 살펴봐요.</p>
+        </div>
+        <div class="insight-panel" id="reading-insights" aria-live="polite"></div>
+      </section>
+      </div>
+
+      <div class="app-view" id="view-data" data-view="data" role="tabpanel" aria-labelledby="tab-data" hidden>
+      <section class="data-section" id="data-panel">
+        <div class="data-intro">
+          <div class="section-kicker">POWERED BY PUBLIC DATA <span class="kicker-rule"></span></div>
+          <h2>좋은 추천의 시작은<br><em>좋은 데이터</em>니까요.</h2>
+          <p>국립중앙도서관 대출 순위와 군포시·어린이청소년 사서 추천도서를 함께 사용해요.<br>중·고등학생 이상이 수행평가에 활용하기 어려운 유아·초등 대상 도서는 추천에서 제외해요.</p>
+          <div class="data-source"><span class="source-icon">↗</span><span><b>공공 도서 데이터 + 보조 도서 목록</b><small>국립중앙도서관(BY) · 군포시 · 국립어린이청소년도서관 · 도서 정보 참고자료</small></span></div>
+        </div>
+        <div class="upload-card" id="drop-zone">
+          <div class="upload-topline"><span class="upload-tag"><span class="live-dot"></span>DATA PLAYGROUND</span><span class="file-kind">CSV FILE</span></div>
+          <div class="upload-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M11 7.5h17l9 9V39a2 2 0 0 1-2 2H13a2 2 0 0 1-2-2V9.5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.7"/><path d="M28 8v9h9M17 25h14M17 30h14M17 35h8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M24 20v-7m0 0-3 3m3-3 3 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 id="upload-title">도서 데이터 불러오기</h3>
+          <p id="upload-description">CSV 파일을 여기에 끌어놓거나<br>내 컴퓨터에서 선택해 주세요.</p>
+          <label class="upload-button" for="csv-file">CSV 파일 선택 <span aria-hidden="true">＋</span></label>
+          <input id="csv-file" type="file" accept=".csv,text/csv,application/vnd.ms-excel" hidden>
+          <div class="upload-note"><span>✓</span> 파일은 서버로 전송되지 않아요 <i></i> 최대 20MB</div>
+          <div class="dataset-meta" id="dataset-meta" hidden></div>
+          <p class="upload-error" id="upload-error" role="alert" hidden></p>
+          <div class="column-mapping" id="column-mapping" hidden>
+            <label for="title-column">CSV의 도서 제목 열을 선택해 주세요.</label>
+            <div class="mapping-controls">
+              <select id="title-column" aria-label="도서 제목 열 선택"></select>
+              <button id="apply-column-mapping" type="button">이 열로 불러오기</button>
+            </div>
+            <small>CSV의 열 이름을 표시했어요. ‘도서명’, ‘책 제목’처럼 제목이 들어 있는 열을 골라주세요.</small>
+          </div>
+        </div>
+      </section>
+      </div>
+
+      <div class="app-view" id="view-method" data-view="method" role="tabpanel" aria-labelledby="tab-method" hidden>
+      <section class="method-strip" id="how-it-works">
+        <div class="method-title"><span class="section-kicker">HOW IT WORKS</span><h2>데이터로 취향을<br>읽는 세 단계</h2></div>
+        <div class="method-step"><span class="step-number">01</span><h3>관심사·별점 입력</h3><p>키워드와 읽은 책의 평가로 취향을 알려주세요.</p></div>
+        <div class="method-step"><span class="step-number">02</span><h3>책 내용 분석</h3><p>도서 소개·주제·대출량에서 관련 신호를 찾아요.</p></div>
+        <div class="method-step"><span class="step-number">03</span><h3>취향 맞춤 추천</h3><p>이전 평가와 가까운 분야의 책을 먼저 보여줘요.</p></div>
+        <p class="method-footnote">별점은 이 브라우저에만 저장돼요. 유사 독자 선호는 실제 개인 기록이 아니라 공개 대출량과 보조 평점으로 추정합니다.</p>
+      </section>
+      </div>
+
+      <div class="app-view" id="view-guide" data-view="guide" role="tabpanel" aria-labelledby="tab-guide" hidden>
+        <section class="guide-page">
+          <div class="section-kicker">A QUICK GUIDE <span class="kicker-rule"></span></div>
+          <h2>책길, 이렇게 사용해요<span class="heading-period">.</span></h2>
+          <p class="guide-lead">수행평가 주제에 맞는 책을 찾고, 추천 이유와 활용도를 한 화면에서 확인할 수 있어요.</p>
+          <div class="guide-steps">
+            <article class="guide-step"><span>01</span><h3>수행평가 조건 입력</h3><p>과목·주제·탐구 방향을 적고, 선생님 평가 기준표를 Affine JSON이나 CSV로 올려요.</p></article>
+            <article class="guide-step"><span>02</span><h3>난이도와 추천 근거 확인</h3><p>기초·보통·도전 난이도를 고르고, 키워드 일치도와 학생 추천 정보를 살펴봐요.</p></article>
+            <article class="guide-step"><span>03</span><h3>책 상세 화면 열기</h3><p>책 제목을 눌러 추천 이유와 탐구 질문 예시를 확인하고, 마음에 드는 질문을 탐구 방향에 넣어요.</p></article>
+            <article class="guide-step"><span>04</span><h3>활용도 평가 남기기</h3><p>책이 수행평가에 얼마나 도움이 됐는지 평가하면 다음 학생 추천에 반영돼요.</p></article>
+          </div>
+          <button class="search-submit guide-cta" type="button" data-view-target="project">수행평가 주제로 책 찾기 <span aria-hidden="true">↗</span></button>
+          <p class="guide-privacy">평가는 이 브라우저에 저장돼요. 다른 사용자와 공유되는 평가는 아직 수집하지 않아요.</p>
+        </section>
+      </div>
+
+    </main>
+
+    <footer class="footer"><button class="footer-brand" type="button" data-view-target="discover">책길<span>.</span></button><p>공공데이터로 이어가는 나만의 독서 여정</p><span class="footer-note">A SMALL STEP INTO A BIGGER WORLD OF BOOKS</span></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "책길 홈" [ref=e4] [cursor=pointer]:
+      - /url: "#home"
+      - img [ref=e6]
+      - generic [ref=e9]: 책길.
+    - tablist "주요 화면" [ref=e10]:
+      - tab "책 추천" [selected] [ref=e11] [cursor=pointer]
+      - tab "수행평가" [ref=e12] [cursor=pointer]
+      - tab "사용 안내" [ref=e13] [cursor=pointer]
+      - tab "검색 맞춤" [ref=e14] [cursor=pointer]
+      - tab "내 취향" [ref=e15] [cursor=pointer]
+      - tab "데이터" [ref=e16] [cursor=pointer]
+      - tab "추천 방식" [ref=e17] [cursor=pointer]
+    - button "CSV로 공공데이터 연결" [ref=e18]:
+      - generic [ref=e20]: CSV로 공공데이터 연결
+  - main [ref=e21]:
+    - tabpanel "책 추천" [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic [ref=e25]: YOUR NEXT CHAPTER STARTS HERE
+          - heading "읽고 싶은 마음에 딱 맞는 책을 찾아드려요." [level=1] [ref=e27]:
+            - text: 읽고 싶은 마음에
+            - text: 딱 맞는 책을
+            - emphasis [ref=e28]: 찾아드려요.
+          - paragraph [ref=e29]:
+            - text: 관심 분야나 요즘 궁금한 키워드를 알려주시면
+            - text: 책의 내용과 주제를 살펴 추천해요.
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - img [ref=e32]
+              - generic [ref=e35]: 관심 분야 또는 키워드 입력
+              - searchbox "관심 분야 또는 키워드 입력" [ref=e36]
+              - button "책 추천받기" [ref=e37] [cursor=pointer]: 책 추천받기 ↗
+            - generic "추천 주제 빠르게 선택" [ref=e38]:
+              - generic [ref=e39]: 키워드를 골라 둘러보세요
+              - button "# 기후 변화" [ref=e40] [cursor=pointer]
+              - button "# 환경" [ref=e41] [cursor=pointer]
+              - button "# 인공지능" [ref=e42] [cursor=pointer]
+              - button "# 심리" [ref=e43] [cursor=pointer]
+              - button "# 바다" [ref=e44] [cursor=pointer]
+              - button "# 진로" [ref=e45] [cursor=pointer]
+              - button "# 경제" [ref=e46] [cursor=pointer]
+              - button "# 과학" [ref=e47] [cursor=pointer]
+              - button "# 역사" [ref=e48] [cursor=pointer]
+              - button "# 우정" [ref=e49] [cursor=pointer]
+              - button "# 사회" [ref=e50] [cursor=pointer]
+              - button "# 소설" [ref=e51] [cursor=pointer]
+            - button "수행평가 주제가 있나요? 수행평가 화면 열기" [ref=e52] [cursor=pointer]:
+              - generic [ref=e53]: 수행평가 주제가 있나요?
+              - generic [ref=e54]: 수행평가 화면 열기 ↗
+          - generic [ref=e55]:
+            - generic [ref=e56]: ✳
+            - text: 내 취향은 가볍게, 추천은 데이터답게
+        - generic "책과 독서에 대한 일러스트" [ref=e57]:
+          - generic [ref=e60]:
+            - text: 작은 발견이
+            - text: 큰 변화를 만들어요
+          - generic [ref=e62]:
+            - generic [ref=e63]: 생각의 지도
+            - generic [ref=e64]:
+              - text: IDEAS
+              - text: IN MOTION
+          - generic [ref=e66]:
+            - generic [ref=e67]: 천천히, 깊게
+            - generic [ref=e68]:
+              - text: READ
+              - text: YOUR WAY
+            - generic [ref=e70]: 책길 추천 도서
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - text: READ
+              - text: MORE
+            - generic [ref=e74]: ✳
+          - generic [ref=e75]:
+            - text: 오늘의 한 페이지가
+            - text: 내일의 나를 만듭니다.
+          - img [ref=e77]
+      - region "주제와 연결된 책을 찾아요." [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: THE READING LIST
+            - heading "주제와 연결된 책을 찾아요." [level=2] [ref=e84]
+            - paragraph [ref=e85]: 예시 도서로 미리 둘러보고, CSV를 올려 실제 공공데이터를 분석해 보세요.
+          - generic [ref=e86]:
+            - generic [ref=e87]: "06"
+            - generic [ref=e88]: TITLES
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - generic [ref=e91]: 원하는 책 난이도
+            - generic [ref=e92]: 학생 수행평가용 예상 수준
+          - generic [ref=e93]: 책 난이도 필터
+          - combobox "책 난이도 필터" [ref=e94]:
+            - option "모든 난이도" [selected]
+            - option "기초"
+            - option "보통"
+            - option "도전"
+  - contentinfo [ref=e95]:
+    - button "책길." [ref=e96] [cursor=pointer]
+    - paragraph [ref=e97]: 공공데이터로 이어가는 나만의 독서 여정
+    - generic [ref=e98]: A SMALL STEP INTO A BIGGER WORLD OF BOOKS

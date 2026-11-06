@@ -1,0 +1,501 @@
+﻿Book_ID,ISBN,Title,Author,Publisher,Publication_Year,Genre,Price_KRW,Rating
+1,9781478163336,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,2007,Fantasy,16800,4.2
+2,9789963334027,달러구트 꿈 백화점,이미예,팩토리나인,2017,소설,12000,4.0
+3,9783585650765,Pride and Prejudice,Jane Austen,T. Egerton,2002,Romance,22000,4.2
+4,9784733616468,공정하다는 착각,마이클 샌델,와이즈베리,2000,사회/정치,22000,4.3
+5,9788574149623,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,1996,Classic,14000,4.4
+6,9788934927900,역행자,자청,웅진지식하우스,2006,자기계발,12000,4.7
+7,9789256195754,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,1995,Finance,18000,4.8
+8,9781298737115,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2004,인문/역사,18000,5.0
+9,9785728765145,Becoming,Michelle Obama,Crown,2007,Biography,25000,4.6
+10,9785993561330,역행자,자청,웅진지식하우스,2012,자기계발,16800,4.7
+11,9783783290804,Fahrenheit 451,Ray Bradbury,Ballantine Books,2000,Dystopian,16800,4.2
+12,9781240251670,원씽,게리 켈러,비즈니스북스,1992,자기계발,20000,4.4
+13,9782351531232,1984,George Orwell,Secker & Warburg,2021,Dystopian,22000,4.9
+14,9785908596108,파친코,이민진,인플루엔셜,1998,소설,16800,4.7
+15,9787805745026,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,2015,Finance,20000,4.2
+16,9787483366065,아몬드,손원평,창비,1995,소설,12000,4.9
+17,9783694860237,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2017,Classic,14000,4.4
+18,9789573276066,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2023,인문/역사,18000,5.0
+19,9785047709752,Becoming,Michelle Obama,Crown,1997,Biography,18000,4.8
+20,9785774080242,세이노의 가르침,세이노,데이원,2017,자기계발,15000,4.5
+21,9784919706744,Fahrenheit 451,Ray Bradbury,Ballantine Books,2009,Dystopian,16800,4.2
+22,9789592390874,불편한 편의점,김호연,나무옆의의자,2010,소설,25000,4.0
+23,9788760038710,Clean Code,Robert C. Martin,Prentice Hall,2005,Technology,12000,4.2
+24,9785067116927,공정하다는 착각,마이클 샌델,와이즈베리,1995,사회/정치,25000,4.8
+25,9781540137305,Educated,Tara Westover,Random House,2020,Biography,15000,4.3
+26,9786633778595,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2013,인문/역사,25000,4.9
+27,9781519709088,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",2004,Psychology,14000,4.3
+28,9783379074828,공정하다는 착각,마이클 샌델,와이즈베리,2004,사회/정치,12000,4.1
+29,9781252860905,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,1994,Fantasy,12000,4.9
+30,9783208283737,작별하지 않는다,한강,문학동네,2007,소설,25000,4.2
+31,9787769777484,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2005,Classic,25000,4.8
+32,9781405126237,사피엔스,유발 하라리,김영사,2017,인문/역사,20000,4.4
+33,9789822598063,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",1996,Psychology,12000,4.4
+34,9781469306928,세이노의 가르침,세이노,데이원,2002,자기계발,16800,4.5
+35,9782811967850,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2007,Classic,25000,4.2
+36,9783363629228,작별하지 않는다,한강,문학동네,1993,소설,12000,5.0
+37,9782015242185,Clean Code,Robert C. Martin,Prentice Hall,2016,Technology,25000,4.5
+38,9784875962621,원씽,게리 켈러,비즈니스북스,2000,자기계발,22000,4.0
+39,9787249213379,Atomic Habits,James Clear,Avery,2017,Self-Help,25000,4.2
+40,9789841118431,돈의 속성,김승호,스노우폭스북스,2024,경제/경영,12000,4.7
+41,9789805294283,Harry Potter and the Sorcerer's Stone,J.K. Rowling,Bloomsbury,2020,Fantasy,15000,4.1
+42,9781798112159,코스모스,칼 세이건,사이언스북스,1994,과학,16800,4.4
+43,9783446737281,Clean Code,Robert C. Martin,Prentice Hall,1992,Technology,14000,4.4
+44,9782119980139,공정하다는 착각,마이클 샌델,와이즈베리,2010,사회/정치,16800,4.3
+45,9786583444939,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2010,Classic,14000,4.0
+46,9785278201686,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,1994,인문/역사,16800,4.5
+47,9789303285831,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,1994,Classic,16800,4.4
+48,9783271783000,불편한 편의점,김호연,나무옆의의자,2009,소설,14000,4.9
+49,9782135872504,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,1996,Classic,15000,4.3
+50,9782472659635,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2006,인문/역사,25000,4.3
+51,9784633987785,Clean Code,Robert C. Martin,Prentice Hall,1995,Technology,22000,4.8
+52,9785310195927,소년이 온다,한강,창비,1998,소설,18000,4.2
+53,9781041531055,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",1994,Psychology,15000,4.5
+54,9785931025280,역행자,자청,웅진지식하우스,1998,자기계발,12000,4.3
+55,9782536778959,Clean Code,Robert C. Martin,Prentice Hall,2005,Technology,14000,4.4
+56,9784993808574,이기적 유전자,리처드 도킨스,을유문화사,2000,과학,15000,4.9
+57,9789265609994,Harry Potter and the Sorcerer's Stone,J.K. Rowling,Bloomsbury,2016,Fantasy,16800,4.3
+58,9783021598254,달러구트 꿈 백화점,이미예,팩토리나인,2002,소설,25000,4.3
+59,9781977515203,Becoming,Michelle Obama,Crown,1991,Biography,16800,4.4
+60,9784712367634,트렌드 코리아 2024,김난도,미래의창,2007,경제/경영,20000,4.6
+61,9781118543417,Atomic Habits,James Clear,Avery,2006,Self-Help,15000,4.6
+62,9781164313419,트렌드 코리아 2024,김난도,미래의창,2017,경제/경영,20000,4.7
+63,9785791662178,The Great Gatsby,F. Scott Fitzgerald,Charles Scribner's Sons,2002,Classic,18000,4.0
+64,9789597198572,자나깨나 책 읽기,이문열,민음사,2024,인문/역사,16800,4.4
+65,9789249648014,1984,George Orwell,Secker & Warburg,2010,Dystopian,14000,4.7
+66,9787473041895,돈의 속성,김승호,스노우폭스북스,2016,경제/경영,20000,4.4
+67,9783381183492,The Alchemist,Paulo Coelho,HarperOne,2002,Fiction,22000,4.7
+68,9784877520303,원씽,게리 켈러,비즈니스북스,2009,자기계발,22000,4.5
+69,9786600100288,Harry Potter and the Sorcerer's Stone,J.K. Rowling,Bloomsbury,2003,Fantasy,22000,4.8
+70,9788106906547,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2019,인문/역사,25000,4.4
+71,9787490442903,Pride and Prejudice,Jane Austen,T. Egerton,2000,Romance,14000,4.3
+72,9782439622628,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2005,인문/역사,18000,4.2
+73,9781632880468,Pride and Prejudice,Jane Austen,T. Egerton,1992,Romance,16800,5.0
+74,9785607762169,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2016,인문/역사,16800,4.7
+75,9787418301086,Atomic Habits,James Clear,Avery,2005,Self-Help,15000,4.7
+76,9784803044114,채식주의자,한강,창비,2017,소설,16800,4.2
+77,9787519578908,Fahrenheit 451,Ray Bradbury,Ballantine Books,1993,Dystopian,16800,4.9
+78,9782960488648,달러구트 꿈 백화점,이미예,팩토리나인,2019,소설,20000,5.0
+79,9788995059769,Clean Code,Robert C. Martin,Prentice Hall,2018,Technology,18000,4.8
+80,9787533932956,트렌드 코리아 2024,김난도,미래의창,2005,경제/경영,18000,4.4
+81,9782227193082,Fahrenheit 451,Ray Bradbury,Ballantine Books,2007,Dystopian,20000,4.3
+82,9781346078420,이기적 유전자,리처드 도킨스,을유문화사,1999,과학,16800,4.4
+83,9784034047127,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,1994,Classic,22000,4.4
+84,9787296096963,이기적 유전자,리처드 도킨스,을유문화사,1993,과학,16800,4.8
+85,9783987248503,Atomic Habits,James Clear,Avery,2014,Self-Help,25000,4.0
+86,9788884394620,역행자,자청,웅진지식하우스,2024,자기계발,16800,4.5
+87,9787166868583,The Alchemist,Paulo Coelho,HarperOne,1991,Fiction,22000,4.3
+88,9784110335368,원씽,게리 켈러,비즈니스북스,2019,자기계발,15000,5.0
+89,9781116402440,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,2017,Finance,15000,4.9
+90,9785510938164,불편한 편의점,김호연,나무옆의의자,2014,소설,20000,4.2
+91,9789072992288,The Great Gatsby,F. Scott Fitzgerald,Charles Scribner's Sons,2007,Classic,22000,4.3
+92,9783019952494,작별하지 않는다,한강,문학동네,2024,소설,12000,5.0
+93,9782062073706,The Great Gatsby,F. Scott Fitzgerald,Charles Scribner's Sons,1991,Classic,15000,4.2
+94,9783875303866,물고기는 존재하지 않는다,룰루 밀러,곰출판,2003,과학,25000,4.7
+95,9782584392720,Educated,Tara Westover,Random House,1997,Biography,15000,5.0
+96,9783485432030,달러구트 꿈 백화점,이미예,팩토리나인,2009,소설,22000,4.4
+97,9781851819922,Fahrenheit 451,Ray Bradbury,Ballantine Books,2005,Dystopian,14000,4.7
+98,9784361393231,돈의 속성,김승호,스노우폭스북스,2012,경제/경영,22000,4.7
+99,9782465576757,1984,George Orwell,Secker & Warburg,2016,Dystopian,25000,4.1
+100,9788854238091,역행자,자청,웅진지식하우스,1999,자기계발,22000,4.2
+101,9787371573288,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,2017,Finance,18000,4.3
+102,9785667181613,호모 데우스,유발 하라리,김영사,2018,인문/역사,16800,4.8
+103,9786922713972,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",1991,Classic,25000,4.9
+104,9783094011046,불편한 편의점,김호연,나무옆의의자,2012,소설,18000,4.3
+105,9789074999574,Clean Code,Robert C. Martin,Prentice Hall,1990,Technology,16800,4.1
+106,9784256292402,자나깨나 책 읽기,이문열,민음사,2020,인문/역사,25000,4.4
+107,9785694628407,Harry Potter and the Sorcerer's Stone,J.K. Rowling,Bloomsbury,2004,Fantasy,22000,4.7
+108,9786879898080,돈의 속성,김승호,스노우폭스북스,2023,경제/경영,20000,4.4
+109,9787658867798,Fahrenheit 451,Ray Bradbury,Ballantine Books,2012,Dystopian,25000,4.3
+110,9781990153364,트렌드 코리아 2024,김난도,미래의창,2002,경제/경영,20000,4.1
+111,9783964229905,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,2002,Finance,16800,4.7
+112,9786128695970,트렌드 코리아 2024,김난도,미래의창,2004,경제/경영,20000,4.2
+113,9785838636981,Harry Potter and the Sorcerer's Stone,J.K. Rowling,Bloomsbury,1992,Fantasy,12000,4.6
+114,9788528185067,아몬드,손원평,창비,1996,소설,12000,4.6
+115,9787351029171,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",2011,Psychology,15000,5.0
+116,9783051831261,트렌드 코리아 2024,김난도,미래의창,1994,경제/경영,22000,4.5
+117,9781230249226,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",1999,Classic,18000,4.1
+118,9788578226905,호모 데우스,유발 하라리,김영사,2004,인문/역사,22000,4.5
+119,9787136777424,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",1993,Psychology,14000,4.9
+120,9783686566611,사피엔스,유발 하라리,김영사,2006,인문/역사,14000,4.2
+121,9783370788656,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2000,Classic,12000,4.4
+122,9787313226034,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,1992,인문/역사,16800,4.3
+123,9782950049707,The Alchemist,Paulo Coelho,HarperOne,2004,Fiction,18000,4.8
+124,9785010075526,공정하다는 착각,마이클 샌델,와이즈베리,2017,사회/정치,14000,4.5
+125,9781610900209,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,1993,Fantasy,15000,4.8
+126,9786534540358,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,1997,인문/역사,25000,4.7
+127,9787614170471,Fahrenheit 451,Ray Bradbury,Ballantine Books,2018,Dystopian,14000,4.6
+128,9788449766502,자나깨나 책 읽기,이문열,민음사,2006,인문/역사,12000,4.1
+129,9785083595997,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,2007,Fantasy,12000,4.8
+130,9788093179272,불편한 편의점,김호연,나무옆의의자,2007,소설,15000,5.0
+131,9785686850454,Atomic Habits,James Clear,Avery,2012,Self-Help,22000,4.3
+132,9784683935609,달러구트 꿈 백화점,이미예,팩토리나인,2011,소설,22000,4.7
+133,9785452580296,The Alchemist,Paulo Coelho,HarperOne,1995,Fiction,20000,4.3
+134,9785243939729,달러구트 꿈 백화점,이미예,팩토리나인,2024,소설,25000,4.4
+135,9787521647556,Pride and Prejudice,Jane Austen,T. Egerton,2021,Romance,25000,4.8
+136,9786532043080,사피엔스,유발 하라리,김영사,2021,인문/역사,14000,4.0
+137,9785975196350,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,1990,Fantasy,22000,4.1
+138,9784574027746,달러구트 꿈 백화점,이미예,팩토리나인,2021,소설,18000,4.5
+139,9783028168532,The Alchemist,Paulo Coelho,HarperOne,2019,Fiction,15000,4.4
+140,9784776677526,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,1994,인문/역사,18000,4.8
+141,9787077131439,Becoming,Michelle Obama,Crown,2022,Biography,18000,4.8
+142,9788413332547,돈의 속성,김승호,스노우폭스북스,2021,경제/경영,15000,4.4
+143,9786777263363,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",2024,Psychology,22000,4.5
+144,9784734910816,세이노의 가르침,세이노,데이원,2005,자기계발,22000,4.2
+145,9782764265627,Educated,Tara Westover,Random House,2010,Biography,25000,4.7
+146,9785212581860,원씽,게리 켈러,비즈니스북스,2021,자기계발,12000,4.1
+147,9788924383993,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",1996,Classic,25000,4.0
+148,9781662976408,아몬드,손원평,창비,2020,소설,18000,4.3
+149,9787586857694,Fahrenheit 451,Ray Bradbury,Ballantine Books,2010,Dystopian,25000,4.9
+150,9783651968214,소년이 온다,한강,창비,2005,소설,18000,5.0
+151,9785683143590,Fahrenheit 451,Ray Bradbury,Ballantine Books,1996,Dystopian,14000,4.4
+152,9784880176834,돈의 속성,김승호,스노우폭스북스,1992,경제/경영,20000,4.8
+153,9786834555642,The Alchemist,Paulo Coelho,HarperOne,2017,Fiction,15000,4.2
+154,9784403845231,자나깨나 책 읽기,이문열,민음사,2000,인문/역사,15000,4.1
+155,9783934040692,Becoming,Michelle Obama,Crown,2021,Biography,15000,4.2
+156,9787268807562,트렌드 코리아 2024,김난도,미래의창,1990,경제/경영,25000,4.9
+157,9783347621147,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,1994,Fantasy,25000,4.9
+158,9789426850703,공정하다는 착각,마이클 샌델,와이즈베리,2006,사회/정치,25000,4.8
+159,9789587244091,Pride and Prejudice,Jane Austen,T. Egerton,2020,Romance,14000,4.2
+160,9788298348097,공정하다는 착각,마이클 샌델,와이즈베리,1991,사회/정치,22000,4.3
+161,9785181592286,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",2021,Classic,18000,4.8
+162,9782513206997,호모 데우스,유발 하라리,김영사,2002,인문/역사,18000,4.7
+163,9785464285991,Fahrenheit 451,Ray Bradbury,Ballantine Books,2018,Dystopian,12000,4.6
+164,9786562457061,아몬드,손원평,창비,2016,소설,15000,4.2
+165,9789467483284,Educated,Tara Westover,Random House,2023,Biography,18000,4.8
+166,9789350223111,트렌드 코리아 2024,김난도,미래의창,2008,경제/경영,20000,4.8
+167,9785135595236,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",1999,Psychology,16800,4.9
+168,9782570991908,원씽,게리 켈러,비즈니스북스,2015,자기계발,12000,4.3
+169,9787248258432,1984,George Orwell,Secker & Warburg,2006,Dystopian,22000,4.8
+170,9786299224743,역행자,자청,웅진지식하우스,1991,자기계발,20000,4.9
+171,9783781645824,Pride and Prejudice,Jane Austen,T. Egerton,2019,Romance,18000,4.6
+172,9781600337721,달러구트 꿈 백화점,이미예,팩토리나인,1992,소설,18000,5.0
+173,9781417436474,1984,George Orwell,Secker & Warburg,2024,Dystopian,15000,4.4
+174,9789381721152,역행자,자청,웅진지식하우스,1992,자기계발,20000,4.2
+175,9785082603369,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",2013,Psychology,14000,5.0
+176,9782540492449,역행자,자청,웅진지식하우스,2015,자기계발,18000,4.2
+177,9788834841063,1984,George Orwell,Secker & Warburg,1995,Dystopian,16800,4.6
+178,9785170814031,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,1993,인문/역사,20000,4.2
+179,9781881351247,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2003,Classic,16800,4.8
+180,9785307145900,호모 데우스,유발 하라리,김영사,1999,인문/역사,15000,4.5
+181,9781749459440,Educated,Tara Westover,Random House,1991,Biography,15000,4.0
+182,9787824071348,호모 데우스,유발 하라리,김영사,1991,인문/역사,15000,4.3
+183,9788480622116,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2023,Classic,14000,4.7
+184,9783549776141,물고기는 존재하지 않는다,룰루 밀러,곰출판,2018,과학,16800,4.9
+185,9786590459714,Harry Potter and the Sorcerer's Stone,J.K. Rowling,Bloomsbury,1991,Fantasy,12000,5.0
+186,9785758659824,원씽,게리 켈러,비즈니스북스,2018,자기계발,14000,4.9
+187,9783612617566,The Great Gatsby,F. Scott Fitzgerald,Charles Scribner's Sons,1994,Classic,15000,4.3
+188,9786691628155,공정하다는 착각,마이클 샌델,와이즈베리,2023,사회/정치,18000,4.5
+189,9782847692050,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",1997,Classic,16800,4.4
+190,9787072283066,호모 데우스,유발 하라리,김영사,2019,인문/역사,22000,4.4
+191,9786637352254,1984,George Orwell,Secker & Warburg,2010,Dystopian,18000,4.4
+192,9783036965083,아몬드,손원평,창비,1995,소설,14000,4.1
+193,9789847550940,1984,George Orwell,Secker & Warburg,2011,Dystopian,14000,4.4
+194,9784096932046,자나깨나 책 읽기,이문열,민음사,2008,인문/역사,18000,4.4
+195,9783179320319,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",1999,Classic,25000,4.2
+196,9787684109322,달러구트 꿈 백화점,이미예,팩토리나인,1997,소설,18000,4.6
+197,9783391179077,Educated,Tara Westover,Random House,2007,Biography,12000,4.2
+198,9789252940816,돈의 속성,김승호,스노우폭스북스,2012,경제/경영,12000,4.2
+199,9782721355682,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,1999,Classic,12000,4.1
+200,9786218955994,코스모스,칼 세이건,사이언스북스,2016,과학,25000,4.3
+201,9783560761637,The Great Gatsby,F. Scott Fitzgerald,Charles Scribner's Sons,1993,Classic,15000,4.2
+202,9789803662860,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,1995,인문/역사,18000,4.4
+203,9787193532624,Atomic Habits,James Clear,Avery,2007,Self-Help,16800,4.8
+204,9786777473423,달러구트 꿈 백화점,이미예,팩토리나인,1997,소설,18000,4.7
+205,9788160279839,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",1992,Classic,16800,4.4
+206,9781235286742,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2003,인문/역사,18000,4.9
+207,9786392415237,Educated,Tara Westover,Random House,2010,Biography,14000,4.0
+208,9781754603449,자나깨나 책 읽기,이문열,민음사,2014,인문/역사,16800,4.5
+209,9782521136440,Becoming,Michelle Obama,Crown,2015,Biography,12000,4.4
+210,9784956362549,파친코,이민진,인플루엔셜,2010,소설,22000,4.6
+211,9788044354834,Fahrenheit 451,Ray Bradbury,Ballantine Books,2008,Dystopian,14000,4.4
+212,9782554145490,세이노의 가르침,세이노,데이원,2017,자기계발,14000,4.2
+213,9785632753992,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",2009,Classic,20000,4.2
+214,9789917981525,불편한 편의점,김호연,나무옆의의자,1997,소설,16800,4.9
+215,9781634323018,The Great Gatsby,F. Scott Fitzgerald,Charles Scribner's Sons,1996,Classic,15000,4.3
+216,9783587283957,불편한 편의점,김호연,나무옆의의자,1994,소설,15000,5.0
+217,9787417183778,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,2018,Fantasy,20000,4.9
+218,9785943324396,세이노의 가르침,세이노,데이원,1994,자기계발,25000,4.4
+219,9788715177249,The Alchemist,Paulo Coelho,HarperOne,1993,Fiction,20000,4.5
+220,9787278136178,돈의 속성,김승호,스노우폭스북스,1992,경제/경영,12000,4.4
+221,9789919491739,The Alchemist,Paulo Coelho,HarperOne,1995,Fiction,22000,4.5
+222,9785471158517,이기적 유전자,리처드 도킨스,을유문화사,2002,과학,20000,4.6
+223,9785560712839,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,1996,Finance,20000,5.0
+224,9781741134900,작별하지 않는다,한강,문학동네,2005,소설,25000,5.0
+225,9785976777090,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,2013,Finance,18000,4.4
+226,9782437308022,세이노의 가르침,세이노,데이원,2011,자기계발,14000,4.6
+227,9786515369287,Atomic Habits,James Clear,Avery,1999,Self-Help,20000,4.1
+228,9789232363340,아몬드,손원평,창비,2009,소설,22000,4.1
+229,9785028688795,Fahrenheit 451,Ray Bradbury,Ballantine Books,2009,Dystopian,22000,4.6
+230,9784492602058,세이노의 가르침,세이노,데이원,2023,자기계발,14000,4.6
+231,9787478908731,Atomic Habits,James Clear,Avery,1991,Self-Help,20000,4.3
+232,9788585583175,사피엔스,유발 하라리,김영사,2002,인문/역사,16800,5.0
+233,9785626388829,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,1996,Classic,12000,4.7
+234,9782617999530,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2000,인문/역사,15000,4.8
+235,9784876877937,Educated,Tara Westover,Random House,2018,Biography,12000,4.4
+236,9789459318650,호모 데우스,유발 하라리,김영사,2008,인문/역사,25000,4.2
+237,9784586784720,Pride and Prejudice,Jane Austen,T. Egerton,2013,Romance,25000,4.5
+238,9788636984589,돈의 속성,김승호,스노우폭스북스,2022,경제/경영,22000,5.0
+239,9783597009747,Becoming,Michelle Obama,Crown,2006,Biography,12000,4.6
+240,9784655730364,역행자,자청,웅진지식하우스,2008,자기계발,14000,4.8
+241,9783204833232,The Alchemist,Paulo Coelho,HarperOne,2017,Fiction,14000,4.9
+242,9788802681065,호모 데우스,유발 하라리,김영사,2012,인문/역사,12000,4.4
+243,9787451071441,Atomic Habits,James Clear,Avery,2005,Self-Help,22000,5.0
+244,9781964386650,역행자,자청,웅진지식하우스,2010,자기계발,14000,4.8
+245,9781627277004,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,1992,Fantasy,18000,4.9
+246,9788325222101,물고기는 존재하지 않는다,룰루 밀러,곰출판,2018,과학,12000,4.9
+247,9782099184908,Harry Potter and the Sorcerer's Stone,J.K. Rowling,Bloomsbury,1999,Fantasy,22000,4.1
+248,9786315624328,돈의 속성,김승호,스노우폭스북스,1997,경제/경영,12000,4.2
+249,9782963288062,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,1997,Fantasy,25000,4.6
+250,9783469810055,채식주의자,한강,창비,1999,소설,18000,4.4
+251,9782515333359,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",2016,Classic,15000,4.7
+252,9782548781353,작별하지 않는다,한강,문학동네,2023,소설,12000,4.4
+253,9789776913538,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",2014,Psychology,20000,4.3
+254,9785585133392,채식주의자,한강,창비,2005,소설,14000,4.8
+255,9788544878547,Fahrenheit 451,Ray Bradbury,Ballantine Books,1998,Dystopian,12000,4.4
+256,9788281641412,세이노의 가르침,세이노,데이원,2001,자기계발,15000,4.1
+257,9789347720583,Educated,Tara Westover,Random House,1992,Biography,18000,4.2
+258,9784804440755,사피엔스,유발 하라리,김영사,2010,인문/역사,18000,4.5
+259,9787627266386,Becoming,Michelle Obama,Crown,2006,Biography,12000,4.8
+260,9786523804246,사피엔스,유발 하라리,김영사,1993,인문/역사,20000,4.3
+261,9786875597616,Educated,Tara Westover,Random House,2015,Biography,25000,4.9
+262,9786097341129,원씽,게리 켈러,비즈니스북스,2021,자기계발,20000,4.9
+263,9789944748321,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,2017,Finance,14000,4.4
+264,9787637762005,불편한 편의점,김호연,나무옆의의자,2010,소설,14000,4.1
+265,9786564731239,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,2018,Fantasy,22000,4.2
+266,9786804850117,파친코,이민진,인플루엔셜,1992,소설,20000,4.6
+267,9785071218323,Atomic Habits,James Clear,Avery,1994,Self-Help,22000,4.4
+268,9785092199309,불편한 편의점,김호연,나무옆의의자,1999,소설,25000,4.0
+269,9788065920776,1984,George Orwell,Secker & Warburg,2013,Dystopian,22000,4.9
+270,9783598862516,소년이 온다,한강,창비,2018,소설,20000,4.4
+271,9789920155007,Educated,Tara Westover,Random House,1998,Biography,20000,4.4
+272,9781487258112,트렌드 코리아 2024,김난도,미래의창,2001,경제/경영,25000,4.5
+273,9783412365940,Clean Code,Robert C. Martin,Prentice Hall,2006,Technology,18000,4.7
+274,9783109688778,사피엔스,유발 하라리,김영사,1997,인문/역사,15000,4.9
+275,9788358867660,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",1995,Psychology,20000,4.7
+276,9781963110419,작별하지 않는다,한강,문학동네,2002,소설,15000,4.2
+277,9785407856348,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",2013,Psychology,25000,4.8
+278,9784797809585,이기적 유전자,리처드 도킨스,을유문화사,1994,과학,18000,4.4
+279,9788382488979,Fahrenheit 451,Ray Bradbury,Ballantine Books,2023,Dystopian,22000,4.8
+280,9781316756911,공정하다는 착각,마이클 샌델,와이즈베리,2010,사회/정치,14000,4.4
+281,9787517011641,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,1998,Fantasy,15000,4.8
+282,9785952163729,아몬드,손원평,창비,2000,소설,15000,4.3
+283,9786263354811,Fahrenheit 451,Ray Bradbury,Ballantine Books,2023,Dystopian,18000,4.8
+284,9782178758222,트렌드 코리아 2024,김난도,미래의창,2009,경제/경영,14000,4.5
+285,9783493857767,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2000,Classic,20000,4.8
+286,9784709912008,공정하다는 착각,마이클 샌델,와이즈베리,1995,사회/정치,12000,4.9
+287,9787772180891,Educated,Tara Westover,Random House,2003,Biography,22000,4.6
+288,9789403748515,채식주의자,한강,창비,2020,소설,16800,4.8
+289,9787039121419,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,2019,Fantasy,14000,4.7
+290,9787183058550,불편한 편의점,김호연,나무옆의의자,2020,소설,25000,4.2
+291,9785912019630,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",2010,Classic,20000,5.0
+292,9788561998569,아몬드,손원평,창비,2022,소설,14000,4.3
+293,9785821194904,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",2018,Psychology,16800,4.1
+294,9787937993296,소년이 온다,한강,창비,2005,소설,15000,4.8
+295,9782343100361,Clean Code,Robert C. Martin,Prentice Hall,2000,Technology,25000,5.0
+296,9786620138577,파친코,이민진,인플루엔셜,1991,소설,14000,4.9
+297,9782033921663,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,2012,Finance,12000,4.1
+298,9788183421306,물고기는 존재하지 않는다,룰루 밀러,곰출판,2008,과학,12000,4.8
+299,9787026930374,Atomic Habits,James Clear,Avery,1992,Self-Help,22000,4.1
+300,9786131005458,이기적 유전자,리처드 도킨스,을유문화사,2008,과학,14000,4.4
+301,9781510289457,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",1996,Psychology,22000,4.4
+302,9781619623599,세이노의 가르침,세이노,데이원,2022,자기계발,22000,4.5
+303,9781167134222,Harry Potter and the Sorcerer's Stone,J.K. Rowling,Bloomsbury,2011,Fantasy,25000,4.5
+304,9783214080287,아몬드,손원평,창비,2010,소설,20000,4.2
+305,9787581349471,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",2009,Classic,25000,4.8
+306,9783702653218,역행자,자청,웅진지식하우스,2020,자기계발,18000,5.0
+307,9789810503347,Educated,Tara Westover,Random House,2020,Biography,15000,4.5
+308,9782632905070,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2005,인문/역사,12000,4.6
+309,9781471997683,Fahrenheit 451,Ray Bradbury,Ballantine Books,1991,Dystopian,25000,4.3
+310,9786170675407,아몬드,손원평,창비,2022,소설,25000,4.9
+311,9784124168236,Fahrenheit 451,Ray Bradbury,Ballantine Books,1998,Dystopian,16800,4.6
+312,9787551874483,물고기는 존재하지 않는다,룰루 밀러,곰출판,2010,과학,15000,4.5
+313,9788272725290,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,2020,Finance,16800,5.0
+314,9787691931222,트렌드 코리아 2024,김난도,미래의창,2004,경제/경영,18000,4.8
+315,9788322868836,Fahrenheit 451,Ray Bradbury,Ballantine Books,2010,Dystopian,25000,4.3
+316,9782236045968,트렌드 코리아 2024,김난도,미래의창,2024,경제/경영,22000,4.9
+317,9788809871744,Atomic Habits,James Clear,Avery,1999,Self-Help,18000,4.0
+318,9783057629787,작별하지 않는다,한강,문학동네,2002,소설,18000,4.9
+319,9782166605348,Fahrenheit 451,Ray Bradbury,Ballantine Books,1996,Dystopian,16800,4.2
+320,9782000025422,코스모스,칼 세이건,사이언스북스,1996,과학,22000,4.3
+321,9784310415025,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",1990,Psychology,15000,4.4
+322,9789434946593,물고기는 존재하지 않는다,룰루 밀러,곰출판,2010,과학,18000,4.6
+323,9784301648728,Clean Code,Robert C. Martin,Prentice Hall,2004,Technology,12000,4.9
+324,9784597485616,불편한 편의점,김호연,나무옆의의자,1992,소설,22000,4.8
+325,9789272277517,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,1992,Classic,12000,4.3
+326,9789516893905,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2008,인문/역사,25000,5.0
+327,9787546898250,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,1998,Finance,25000,4.3
+328,9782420277412,달러구트 꿈 백화점,이미예,팩토리나인,2019,소설,18000,4.7
+329,9788458717066,Harry Potter and the Sorcerer's Stone,J.K. Rowling,Bloomsbury,2008,Fantasy,16800,4.2
+330,9788846861568,원씽,게리 켈러,비즈니스북스,2022,자기계발,20000,4.1
+331,9781409675913,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,1998,Fantasy,25000,4.3
+332,9785324302460,호모 데우스,유발 하라리,김영사,2014,인문/역사,16800,4.4
+333,9789392515675,The Alchemist,Paulo Coelho,HarperOne,2009,Fiction,12000,4.3
+334,9783975418448,역행자,자청,웅진지식하우스,1993,자기계발,14000,4.5
+335,9786562144168,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2004,Classic,16800,5.0
+336,9785952894299,물고기는 존재하지 않는다,룰루 밀러,곰출판,2013,과학,22000,4.7
+337,9789941564889,Clean Code,Robert C. Martin,Prentice Hall,2018,Technology,20000,4.1
+338,9781481933123,공정하다는 착각,마이클 샌델,와이즈베리,2022,사회/정치,16800,4.6
+339,9786001649002,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2023,Classic,25000,4.1
+340,9783099500162,사피엔스,유발 하라리,김영사,2022,인문/역사,25000,4.8
+341,9787079202263,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",1993,Psychology,25000,4.7
+342,9784106464328,돈의 속성,김승호,스노우폭스북스,2015,경제/경영,18000,4.8
+343,9781313659446,Fahrenheit 451,Ray Bradbury,Ballantine Books,2017,Dystopian,20000,4.7
+344,9785269728619,이기적 유전자,리처드 도킨스,을유문화사,1994,과학,25000,4.0
+345,9789434381924,Atomic Habits,James Clear,Avery,2013,Self-Help,22000,4.4
+346,9782613385312,원씽,게리 켈러,비즈니스북스,2024,자기계발,15000,4.7
+347,9781509525597,The Great Gatsby,F. Scott Fitzgerald,Charles Scribner's Sons,2024,Classic,22000,4.5
+348,9784585531534,호모 데우스,유발 하라리,김영사,1991,인문/역사,18000,4.5
+349,9787633342234,Fahrenheit 451,Ray Bradbury,Ballantine Books,2024,Dystopian,22000,4.8
+350,9787273337803,호모 데우스,유발 하라리,김영사,1999,인문/역사,18000,4.2
+351,9781484664065,Clean Code,Robert C. Martin,Prentice Hall,2016,Technology,12000,4.2
+352,9785439176299,작별하지 않는다,한강,문학동네,1993,소설,16800,4.7
+353,9782885330942,Atomic Habits,James Clear,Avery,2024,Self-Help,16800,4.8
+354,9789561946196,소년이 온다,한강,창비,2004,소설,20000,4.6
+355,9782377246204,Educated,Tara Westover,Random House,2009,Biography,15000,5.0
+356,9786244338662,코스모스,칼 세이건,사이언스북스,2009,과학,18000,4.1
+357,9784915196266,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",2017,Classic,25000,4.0
+358,9788178361496,역행자,자청,웅진지식하우스,2023,자기계발,20000,4.7
+359,9785935852065,Atomic Habits,James Clear,Avery,2014,Self-Help,15000,4.8
+360,9786262814771,물고기는 존재하지 않는다,룰루 밀러,곰출판,1999,과학,25000,4.9
+361,9783276297519,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,2014,Finance,16800,4.3
+362,9783777580518,세이노의 가르침,세이노,데이원,2018,자기계발,20000,4.1
+363,9784562272880,Fahrenheit 451,Ray Bradbury,Ballantine Books,1993,Dystopian,18000,4.4
+364,9783589530493,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,1994,인문/역사,16800,4.8
+365,9783400244551,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",2020,Classic,16800,4.9
+366,9784904100204,세이노의 가르침,세이노,데이원,2003,자기계발,16800,5.0
+367,9788534793165,1984,George Orwell,Secker & Warburg,2005,Dystopian,16800,4.4
+368,9787666129831,호모 데우스,유발 하라리,김영사,2008,인문/역사,22000,4.5
+369,9786837975365,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,2006,Fantasy,20000,4.5
+370,9783001472259,물고기는 존재하지 않는다,룰루 밀러,곰출판,2020,과학,20000,4.9
+371,9786638957146,The Great Gatsby,F. Scott Fitzgerald,Charles Scribner's Sons,1992,Classic,16800,4.7
+372,9787088451467,채식주의자,한강,창비,1999,소설,16800,4.3
+373,9786350369676,Atomic Habits,James Clear,Avery,2011,Self-Help,18000,4.8
+374,9787402059288,물고기는 존재하지 않는다,룰루 밀러,곰출판,2000,과학,20000,4.2
+375,9787642365898,Fahrenheit 451,Ray Bradbury,Ballantine Books,2001,Dystopian,12000,4.5
+376,9783869963940,작별하지 않는다,한강,문학동네,1990,소설,22000,4.1
+377,9781993998857,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,1999,Fantasy,12000,4.2
+378,9782602884806,파친코,이민진,인플루엔셜,2020,소설,25000,4.0
+379,9787664258352,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,1990,Finance,12000,4.5
+380,9782231317919,트렌드 코리아 2024,김난도,미래의창,2022,경제/경영,22000,4.8
+381,9781769945242,Clean Code,Robert C. Martin,Prentice Hall,1996,Technology,15000,4.2
+382,9787556078559,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2012,인문/역사,18000,4.8
+383,9787038841749,1984,George Orwell,Secker & Warburg,2005,Dystopian,16800,4.3
+384,9784262396404,작별하지 않는다,한강,문학동네,1995,소설,22000,4.4
+385,9783044426347,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,1990,Finance,15000,4.1
+386,9785182609876,자나깨나 책 읽기,이문열,민음사,2023,인문/역사,12000,4.2
+387,9787337225491,Clean Code,Robert C. Martin,Prentice Hall,1992,Technology,14000,4.7
+388,9781141312104,트렌드 코리아 2024,김난도,미래의창,2010,경제/경영,12000,5.0
+389,9788820716220,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",1994,Classic,18000,4.2
+390,9788943294729,호모 데우스,유발 하라리,김영사,2024,인문/역사,20000,4.4
+391,9784110258864,Fahrenheit 451,Ray Bradbury,Ballantine Books,2022,Dystopian,20000,4.1
+392,9785621463193,자나깨나 책 읽기,이문열,민음사,2015,인문/역사,20000,4.0
+393,9787230065646,The Alchemist,Paulo Coelho,HarperOne,2004,Fiction,20000,4.6
+394,9782854772813,원씽,게리 켈러,비즈니스북스,2014,자기계발,14000,4.8
+395,9784427620898,The Alchemist,Paulo Coelho,HarperOne,1994,Fiction,14000,4.3
+396,9783722583590,원씽,게리 켈러,비즈니스북스,2014,자기계발,20000,4.4
+397,9786618965953,1984,George Orwell,Secker & Warburg,2013,Dystopian,18000,4.1
+398,9786099808903,작별하지 않는다,한강,문학동네,2018,소설,22000,4.1
+399,9789989642555,1984,George Orwell,Secker & Warburg,2010,Dystopian,22000,4.0
+400,9789953716248,자나깨나 책 읽기,이문열,민음사,2005,인문/역사,15000,4.7
+401,9785891280832,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2009,Classic,18000,4.5
+402,9786013117618,작별하지 않는다,한강,문학동네,2007,소설,22000,4.3
+403,9785625342050,Educated,Tara Westover,Random House,2006,Biography,16800,4.7
+404,9786134840521,물고기는 존재하지 않는다,룰루 밀러,곰출판,1996,과학,15000,4.3
+405,9787958672465,Atomic Habits,James Clear,Avery,2011,Self-Help,25000,4.3
+406,9785879617468,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2010,인문/역사,16800,4.5
+407,9789437783780,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2010,Classic,18000,4.7
+408,9784358554374,물고기는 존재하지 않는다,룰루 밀러,곰출판,2010,과학,22000,4.3
+409,9786982610844,Educated,Tara Westover,Random House,1997,Biography,16800,4.6
+410,9788418324931,이기적 유전자,리처드 도킨스,을유문화사,2003,과학,25000,4.8
+411,9783975704886,Becoming,Michelle Obama,Crown,2016,Biography,25000,4.1
+412,9786334440304,돈의 속성,김승호,스노우폭스북스,1999,경제/경영,22000,4.8
+413,9787863073651,1984,George Orwell,Secker & Warburg,2015,Dystopian,22000,4.5
+414,9784927323485,역행자,자청,웅진지식하우스,1996,자기계발,16800,4.7
+415,9783631431572,The Great Gatsby,F. Scott Fitzgerald,Charles Scribner's Sons,2015,Classic,20000,5.0
+416,9781455028410,자나깨나 책 읽기,이문열,민음사,1996,인문/역사,18000,4.2
+417,9783470617256,Fahrenheit 451,Ray Bradbury,Ballantine Books,2018,Dystopian,20000,4.4
+418,9785942411862,공정하다는 착각,마이클 샌델,와이즈베리,1991,사회/정치,25000,4.1
+419,9781368743564,Atomic Habits,James Clear,Avery,1999,Self-Help,20000,4.3
+420,9784368414003,파친코,이민진,인플루엔셜,2023,소설,25000,4.3
+421,9788287542760,1984,George Orwell,Secker & Warburg,2010,Dystopian,14000,4.3
+422,9784436189130,달러구트 꿈 백화점,이미예,팩토리나인,2005,소설,15000,4.6
+423,9787699500252,The Great Gatsby,F. Scott Fitzgerald,Charles Scribner's Sons,2019,Classic,16800,4.8
+424,9788118083276,불편한 편의점,김호연,나무옆의의자,2015,소설,12000,4.7
+425,9786142469293,Clean Code,Robert C. Martin,Prentice Hall,2017,Technology,22000,4.0
+426,9786178804934,사피엔스,유발 하라리,김영사,1994,인문/역사,14000,4.8
+427,9786097953691,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,2010,Finance,16800,4.5
+428,9785785590339,트렌드 코리아 2024,김난도,미래의창,2012,경제/경영,25000,4.6
+429,9788733575609,Becoming,Michelle Obama,Crown,1995,Biography,15000,4.3
+430,9782311597150,호모 데우스,유발 하라리,김영사,2001,인문/역사,20000,4.7
+431,9786963404333,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,1998,Finance,22000,4.4
+432,9785294535896,물고기는 존재하지 않는다,룰루 밀러,곰출판,2000,과학,25000,4.3
+433,9785336127868,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,1998,Classic,16800,4.8
+434,9787420846631,이기적 유전자,리처드 도킨스,을유문화사,2021,과학,22000,4.7
+435,9783098948455,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",1995,Psychology,12000,4.8
+436,9782254516617,호모 데우스,유발 하라리,김영사,2007,인문/역사,16800,4.5
+437,9788648220915,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2021,Classic,14000,4.6
+438,9788382963918,트렌드 코리아 2024,김난도,미래의창,2024,경제/경영,16800,5.0
+439,9786358107541,1984,George Orwell,Secker & Warburg,1992,Dystopian,25000,4.3
+440,9785269015766,작별하지 않는다,한강,문학동네,2005,소설,16800,4.8
+441,9788254773525,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",2017,Classic,15000,4.6
+442,9784494084181,사피엔스,유발 하라리,김영사,1993,인문/역사,20000,4.5
+443,9783313993306,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",2010,Classic,18000,4.3
+444,9784501175358,트렌드 코리아 2024,김난도,미래의창,1998,경제/경영,22000,4.9
+445,9784719780119,The Alchemist,Paulo Coelho,HarperOne,2005,Fiction,15000,4.7
+446,9788199372608,호모 데우스,유발 하라리,김영사,2021,인문/역사,15000,4.6
+447,9787991402846,The Alchemist,Paulo Coelho,HarperOne,2014,Fiction,25000,4.1
+448,9788515344022,작별하지 않는다,한강,문학동네,2013,소설,25000,5.0
+449,9783499480057,The Great Gatsby,F. Scott Fitzgerald,Charles Scribner's Sons,1995,Classic,25000,4.6
+450,9784651178512,역행자,자청,웅진지식하우스,2024,자기계발,22000,4.2
+451,9784542693677,Atomic Habits,James Clear,Avery,2021,Self-Help,18000,4.3
+452,9783482206111,돈의 속성,김승호,스노우폭스북스,2021,경제/경영,20000,4.9
+453,9781207916203,Educated,Tara Westover,Random House,1996,Biography,25000,4.0
+454,9787190276035,불편한 편의점,김호연,나무옆의의자,1990,소설,22000,4.2
+455,9784905874266,Fahrenheit 451,Ray Bradbury,Ballantine Books,2009,Dystopian,15000,4.9
+456,9789990826780,트렌드 코리아 2024,김난도,미래의창,2013,경제/경영,18000,4.1
+457,9781710924833,The Hobbit,J.R.R. Tolkien,George Allen & Unwin,2015,Fantasy,18000,4.7
+458,9789981632135,호모 데우스,유발 하라리,김영사,1996,인문/역사,12000,4.2
+459,9788215470887,1984,George Orwell,Secker & Warburg,1990,Dystopian,12000,4.7
+460,9785862655256,달러구트 꿈 백화점,이미예,팩토리나인,1994,소설,16800,4.4
+461,9784461558278,Fahrenheit 451,Ray Bradbury,Ballantine Books,1996,Dystopian,20000,4.4
+462,9785883933136,돈의 속성,김승호,스노우폭스북스,1998,경제/경영,15000,4.1
+463,9789626333324,The Catcher in the Rye,J.D. Salinger,"Little, Brown and Company",2000,Classic,25000,4.4
+464,9788243746565,사피엔스,유발 하라리,김영사,2003,인문/역사,14000,4.9
+465,9784231729475,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2014,Classic,20000,5.0
+466,9784397648396,세이노의 가르침,세이노,데이원,2005,자기계발,18000,4.6
+467,9787904559799,Pride and Prejudice,Jane Austen,T. Egerton,1991,Romance,18000,4.2
+468,9783188382785,지적 대화를 위한 넓고 얕은 지식,채사장,한빛비즈,2015,인문/역사,18000,4.6
+469,9785100282922,Educated,Tara Westover,Random House,2021,Biography,22000,4.1
+470,9789894928839,물고기는 존재하지 않는다,룰루 밀러,곰출판,1990,과학,20000,4.9
+471,9787102562424,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2024,Classic,15000,4.8
+472,9789661615025,작별하지 않는다,한강,문학동네,1994,소설,12000,4.3
+473,9784962447902,Harry Potter and the Sorcerer's Stone,J.K. Rowling,Bloomsbury,2015,Fantasy,18000,4.6
+474,9788589679677,코스모스,칼 세이건,사이언스북스,2017,과학,22000,4.1
+475,9785950724810,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,1995,Finance,18000,4.1
+476,9786698349145,사피엔스,유발 하라리,김영사,1994,인문/역사,18000,4.7
+477,9782024939803,Fahrenheit 451,Ray Bradbury,Ballantine Books,2005,Dystopian,14000,4.9
+478,9783614915290,달러구트 꿈 백화점,이미예,팩토리나인,2009,소설,15000,4.1
+479,9781048750482,Fahrenheit 451,Ray Bradbury,Ballantine Books,2021,Dystopian,20000,4.5
+480,9786012067726,트렌드 코리아 2024,김난도,미래의창,1998,경제/경영,18000,4.7
+481,9785421051461,1984,George Orwell,Secker & Warburg,2017,Dystopian,18000,4.5
+482,9785625980570,트렌드 코리아 2024,김난도,미래의창,2019,경제/경영,20000,4.1
+483,9783434757396,Becoming,Michelle Obama,Crown,2013,Biography,15000,4.3
+484,9781495354068,달러구트 꿈 백화점,이미예,팩토리나인,2022,소설,12000,4.0
+485,9781052776902,Becoming,Michelle Obama,Crown,1992,Biography,25000,4.4
+486,9789741819998,아몬드,손원평,창비,2016,소설,16800,4.3
+487,9786669078253,Atomic Habits,James Clear,Avery,1994,Self-Help,20000,4.1
+488,9781770278145,소년이 온다,한강,창비,2023,소설,12000,5.0
+489,9789061615999,1984,George Orwell,Secker & Warburg,2008,Dystopian,18000,4.3
+490,9782961709902,이기적 유전자,리처드 도킨스,을유문화사,2013,과학,16800,4.3
+491,9783674551406,Educated,Tara Westover,Random House,2019,Biography,20000,4.6
+492,9784332404831,물고기는 존재하지 않는다,룰루 밀러,곰출판,2024,과학,16800,4.2
+493,9782761091692,Clean Code,Robert C. Martin,Prentice Hall,2004,Technology,20000,4.6
+494,9789379439382,채식주의자,한강,창비,1990,소설,22000,4.8
+495,9782320748166,Fahrenheit 451,Ray Bradbury,Ballantine Books,2003,Dystopian,16800,4.4
+496,9782201840404,소년이 온다,한강,창비,1992,소설,16800,4.9
+497,9789141445264,Rich Dad Poor Dad,Robert T. Kiyosaki,Warner Books,2019,Finance,14000,4.6
+498,9788816681114,코스모스,칼 세이건,사이언스북스,1994,과학,12000,4.4
+499,9786311894163,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,2006,Classic,20000,4.9
+500,9788453283843,원씽,게리 켈러,비즈니스북스,2010,자기계발,25000,4.3

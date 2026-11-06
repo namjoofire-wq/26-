@@ -1,0 +1,207 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "책길 홈" [ref=e4] [cursor=pointer]:
+      - /url: "#home"
+      - img [ref=e6]
+      - generic [ref=e9]: 책길.
+    - navigation "주요 메뉴" [ref=e10]:
+      - link "책 발견하기" [ref=e11] [cursor=pointer]:
+        - /url: "#discover"
+      - link "추천 방식" [ref=e12] [cursor=pointer]:
+        - /url: "#how-it-works"
+    - link "CSV로 공공데이터 연결" [ref=e13] [cursor=pointer]:
+      - /url: "#data-panel"
+      - generic [ref=e15]: CSV로 공공데이터 연결
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]: YOUR NEXT CHAPTER STARTS HERE
+        - heading "읽고 싶은 마음에 딱 맞는 책을 찾아드려요." [level=1] [ref=e21]:
+          - text: 읽고 싶은 마음에
+          - text: 딱 맞는 책을
+          - emphasis [ref=e22]: 찾아드려요.
+        - paragraph [ref=e23]:
+          - text: 관심사를 알려주시면 공공도서 데이터에서
+          - text: 지금 당신에게 어울리는 책을 골라볼게요.
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - img [ref=e26]
+            - generic [ref=e29]: 관심 분야 입력
+            - searchbox "관심 분야 입력" [ref=e30]
+            - button "책 추천받기" [ref=e31] [cursor=pointer]: 책 추천받기 ↗
+          - generic "추천 주제 빠르게 선택" [ref=e32]:
+            - generic [ref=e33]: 이런 주제는 어때요
+            - button "# 진로" [ref=e34] [cursor=pointer]
+            - button "# 마음챙김" [ref=e35] [cursor=pointer]
+            - button "# 데이터" [ref=e36] [cursor=pointer]
+            - button "# 소설" [ref=e37] [cursor=pointer]
+        - generic [ref=e38]:
+          - generic [ref=e39]: ✳
+          - text: 내 취향은 가볍게, 추천은 데이터답게
+      - generic "책과 독서에 대한 일러스트" [ref=e40]:
+        - generic [ref=e43]:
+          - text: 작은 발견이
+          - text: 큰 변화를 만들어요
+        - generic [ref=e45]:
+          - generic [ref=e46]: 생각의 지도
+          - generic [ref=e47]:
+            - text: IDEAS
+            - text: IN MOTION
+        - generic [ref=e49]:
+          - generic [ref=e50]: 천천히, 깊게
+          - generic [ref=e51]:
+            - text: READ
+            - text: YOUR WAY
+          - generic [ref=e53]: 책길 추천 도서
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - text: READ
+            - text: MORE
+          - generic [ref=e57]: ✳
+        - generic [ref=e58]:
+          - text: 오늘의 한 페이지가
+          - text: 내일의 나를 만듭니다.
+        - img [ref=e60]
+    - region "지금, 이런 책은 어때요." [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]: THE READING LIST
+          - heading "지금, 이런 책은 어때요." [level=2] [ref=e67]
+          - paragraph [ref=e68]: 예시 도서로 미리 둘러보고, CSV를 올려 실제 공공데이터를 분석해 보세요.
+        - generic [ref=e69]:
+          - generic [ref=e70]: "06"
+          - generic [ref=e71]: BOOKS
+      - generic [ref=e72]:
+        - article [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]: BOOK PATH · 01
+            - generic [ref=e76]: 아주 작은 습관의 힘
+            - generic [ref=e77]: READING IS A JOURNEY
+          - generic [ref=e78]:
+            - generic [ref=e79]: 예시 목록
+            - generic [ref=e80]: 자기계발 · 습관
+            - heading "아주 작은 습관의 힘" [level=3] [ref=e81]
+            - paragraph [ref=e82]: 제임스 클리어 · 2023
+            - paragraph [ref=e83]:
+              - generic [ref=e84]: ✳
+              - text: 자기계발 · 습관
+        - article [ref=e85]:
+          - generic [ref=e86]:
+            - generic [ref=e87]: BOOK PATH · 02
+            - generic [ref=e88]: 불안 세대
+            - generic [ref=e89]: READING IS A JOURNEY
+          - generic [ref=e90]:
+            - generic [ref=e91]: 예시 목록
+            - generic [ref=e92]: 사회 · 심리
+            - heading "불안 세대" [level=3] [ref=e93]
+            - paragraph [ref=e94]: 조너선 하이트 · 2024
+            - paragraph [ref=e95]:
+              - generic [ref=e96]: ✳
+              - text: 사회 · 심리
+        - article [ref=e97]:
+          - generic [ref=e98]:
+            - generic [ref=e99]: BOOK PATH · 03
+            - generic [ref=e100]: 세상은 실제로 어떻게 돌아가는가
+            - generic [ref=e101]: READING IS A JOURNEY
+          - generic [ref=e102]:
+            - generic [ref=e103]: 예시 목록
+            - generic [ref=e104]: 과학 · 데이터
+            - heading "세상은 실제로 어떻게 돌아가는가" [level=3] [ref=e105]
+            - paragraph [ref=e106]: 바츨라프 스밀 · 2023
+            - paragraph [ref=e107]:
+              - generic [ref=e108]: ✳
+              - text: 과학 · 데이터
+        - article [ref=e109]:
+          - generic [ref=e110]:
+            - generic [ref=e111]: BOOK PATH · 04
+            - generic [ref=e112]: 일의 감각
+            - generic [ref=e113]: READING IS A JOURNEY
+          - generic [ref=e114]:
+            - generic [ref=e115]: 예시 목록
+            - generic [ref=e116]: 진로 · 에세이
+            - heading "일의 감각" [level=3] [ref=e117]
+            - paragraph [ref=e118]: 조수용 · 2024
+            - paragraph [ref=e119]:
+              - generic [ref=e120]: ✳
+              - text: 진로 · 에세이
+        - article [ref=e121]:
+          - generic [ref=e122]:
+            - generic [ref=e123]: BOOK PATH · 05
+            - generic [ref=e124]: 마음챙김의 시
+            - generic [ref=e125]: READING IS A JOURNEY
+          - generic [ref=e126]:
+            - generic [ref=e127]: 예시 목록
+            - generic [ref=e128]: 시 · 마음챙김
+            - heading "마음챙김의 시" [level=3] [ref=e129]
+            - paragraph [ref=e130]: 류시화 · 2022
+            - paragraph [ref=e131]:
+              - generic [ref=e132]: ✳
+              - text: 시 · 마음챙김
+        - article [ref=e133]:
+          - generic [ref=e134]:
+            - generic [ref=e135]: BOOK PATH · 06
+            - generic [ref=e136]: 어서 오세요, 휴남동 서점입니다
+            - generic [ref=e137]: READING IS A JOURNEY
+          - generic [ref=e138]:
+            - generic [ref=e139]: 예시 목록
+            - generic [ref=e140]: 소설 · 문학
+            - heading "어서 오세요, 휴남동 서점입니다" [level=3] [ref=e141]
+            - paragraph [ref=e142]: 황보름 · 2023
+            - paragraph [ref=e143]:
+              - generic [ref=e144]: ✳
+              - text: 소설 · 문학
+    - generic [ref=e145]:
+      - generic [ref=e146]:
+        - generic [ref=e147]: POWERED BY PUBLIC DATA
+        - heading "좋은 추천의 시작은 좋은 데이터니까요." [level=2] [ref=e149]:
+          - text: 좋은 추천의 시작은
+          - emphasis [ref=e150]: 좋은 데이터
+          - text: 니까요.
+        - paragraph [ref=e151]:
+          - text: 정보나루에서 받은 도서 CSV를 추가하면
+          - text: 실제 공공데이터로 추천 목록을 바꿔볼 수 있어요.
+        - generic [ref=e152]:
+          - generic [ref=e153]: ↗
+          - generic [ref=e154]:
+            - generic [ref=e155]: 정보나루 도서관 빅데이터
+            - generic [ref=e156]: 업로드한 파일은 이 브라우저에서만 처리돼요.
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - generic [ref=e159]: DATA PLAYGROUND
+          - generic [ref=e161]: CSV FILE
+        - img [ref=e163]
+        - heading "도서 데이터 불러오기" [level=3] [ref=e167]
+        - paragraph [ref=e168]:
+          - text: CSV 파일을 여기에 끌어놓거나
+          - text: 내 컴퓨터에서 선택해 주세요.
+        - generic [ref=e169] [cursor=pointer]:
+          - text: CSV 파일 선택
+          - generic [ref=e170]: ＋
+        - generic [ref=e171]:
+          - generic [ref=e172]: ✓
+          - text: 파일은 서버로 전송되지 않아요
+          - text: 최대 20MB
+    - generic [ref=e174]:
+      - generic [ref=e175]:
+        - generic [ref=e176]: HOW IT WORKS
+        - heading "데이터로 취향을 읽는 세 단계" [level=2] [ref=e177]:
+          - text: 데이터로 취향을
+          - text: 읽는 세 단계
+      - generic [ref=e178]:
+        - text: "01"
+        - heading "관심사 입력" [level=3] [ref=e179]
+        - paragraph [ref=e180]: 요즘 궁금한 주제나 읽고 싶은 분야를 알려주세요.
+      - generic [ref=e181]:
+        - text: "02"
+        - heading "데이터 분석" [level=3] [ref=e182]
+        - paragraph [ref=e183]: 책의 제목·주제와 대출 데이터를 함께 살펴봐요.
+      - generic [ref=e184]:
+        - text: "03"
+        - heading "맞춤 책 발견" [level=3] [ref=e185]
+        - paragraph [ref=e186]: 왜 추천했는지 이유와 함께 책을 소개해요.
+      - paragraph [ref=e187]: 현재 추천은 관심 키워드 적합도와 대출 지표를 조합해 계산해요. 사용자 평가 데이터가 쌓이면 학습형 추천 모델로 발전시킬 수 있어요.
+  - contentinfo [ref=e188]:
+    - link "책길." [ref=e189] [cursor=pointer]:
+      - /url: "#home"
+    - paragraph [ref=e190]: 공공데이터로 이어가는 나만의 독서 여정
+    - generic [ref=e191]: A SMALL STEP INTO A BIGGER WORLD OF BOOKS

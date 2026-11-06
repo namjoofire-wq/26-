@@ -1,0 +1,392 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "책길 홈" [ref=e4] [cursor=pointer]:
+      - /url: "#home"
+      - img [ref=e6]
+      - generic [ref=e9]: 책길.
+    - tablist "주요 화면" [ref=e10]:
+      - tab "책 추천" [selected] [ref=e11] [cursor=pointer]
+      - tab "수행평가" [ref=e12] [cursor=pointer]
+      - tab "검색 맞춤" [ref=e13] [cursor=pointer]
+      - tab "내 취향" [ref=e14] [cursor=pointer]
+      - tab "데이터" [ref=e15] [cursor=pointer]
+      - tab "추천 방식" [ref=e16] [cursor=pointer]
+    - button "공공데이터 연결 완료" [ref=e17]:
+      - generic [ref=e19]: 공공데이터 연결 완료
+  - main [ref=e20]:
+    - tabpanel "책 추천" [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - generic [ref=e24]: YOUR NEXT CHAPTER STARTS HERE
+          - heading "읽고 싶은 마음에 딱 맞는 책을 찾아드려요." [level=1] [ref=e26]:
+            - text: 읽고 싶은 마음에
+            - text: 딱 맞는 책을
+            - emphasis [ref=e27]: 찾아드려요.
+          - paragraph [ref=e28]:
+            - text: 관심 분야나 요즘 궁금한 키워드를 알려주시면
+            - text: 책의 내용과 주제를 살펴 추천해요.
+          - generic [ref=e29]:
+            - generic [ref=e30]:
+              - img [ref=e31]
+              - generic [ref=e34]: 관심 분야 또는 키워드 입력
+              - searchbox "관심 분야 또는 키워드 입력" [ref=e35]
+              - button "책 추천받기" [ref=e36] [cursor=pointer]: 책 추천받기 ↗
+            - generic "추천 주제 빠르게 선택" [ref=e37]:
+              - generic [ref=e38]: 키워드를 골라 둘러보세요
+              - button "# 기후 변화" [ref=e39] [cursor=pointer]
+              - button "# 환경" [ref=e40] [cursor=pointer]
+              - button "# 인공지능" [ref=e41] [cursor=pointer]
+              - button "# 심리" [ref=e42] [cursor=pointer]
+              - button "# 바다" [ref=e43] [cursor=pointer]
+              - button "# 진로" [ref=e44] [cursor=pointer]
+              - button "# 경제" [ref=e45] [cursor=pointer]
+              - button "# 과학" [ref=e46] [cursor=pointer]
+              - button "# 역사" [ref=e47] [cursor=pointer]
+              - button "# 우정" [ref=e48] [cursor=pointer]
+              - button "# 사회" [ref=e49] [cursor=pointer]
+              - button "# 소설" [ref=e50] [cursor=pointer]
+            - button "수행평가 주제가 있나요? 수행평가 화면 열기" [ref=e51] [cursor=pointer]:
+              - generic [ref=e52]: 수행평가 주제가 있나요?
+              - generic [ref=e53]: 수행평가 화면 열기 ↗
+          - generic [ref=e54]:
+            - generic [ref=e55]: ✳
+            - text: 내 취향은 가볍게, 추천은 데이터답게
+        - generic "책과 독서에 대한 일러스트" [ref=e56]:
+          - generic [ref=e59]:
+            - text: 작은 발견이
+            - text: 큰 변화를 만들어요
+          - generic [ref=e61]:
+            - generic [ref=e62]: 생각의 지도
+            - generic [ref=e63]:
+              - text: IDEAS
+              - text: IN MOTION
+          - generic [ref=e65]:
+            - generic [ref=e66]: 천천히, 깊게
+            - generic [ref=e67]:
+              - text: READ
+              - text: YOUR WAY
+            - generic [ref=e69]: 책길 추천 도서
+          - generic [ref=e70]:
+            - generic [ref=e71]:
+              - text: READ
+              - text: MORE
+            - generic [ref=e73]: ✳
+          - generic [ref=e74]:
+            - text: 오늘의 한 페이지가
+            - text: 내일의 나를 만듭니다.
+          - img [ref=e76]
+      - region "주제와 연결된 책을 찾아요." [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]: THE READING LIST
+            - heading "주제와 연결된 책을 찾아요." [level=2] [ref=e83]
+            - paragraph [ref=e84]: 856개 데이터 레코드에서 같은 제목은 묶어 추천해요.
+          - generic [ref=e85]:
+            - generic [ref=e86]: "285"
+            - generic [ref=e87]: TITLES
+        - generic [ref=e88]:
+          - article [ref=e89]:
+            - generic [ref=e90]:
+              - generic [ref=e91]: BOOK PATH · 01
+              - generic [ref=e92]: 흔한남매
+              - generic [ref=e93]: READING IS A JOURNEY
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - text: 대출
+                - strong [ref=e96]: 438,712
+              - generic [ref=e97]: 문학 · KDC 810
+              - heading "흔한남매" [level=3] [ref=e98]
+              - paragraph [ref=e99]: "원작: 흔한남매 ;그림: 유난희 · 2019"
+              - paragraph [ref=e100]: 문학 · KDC 810 분야에서 공공도서 대출 438,712건을 기록했어요.
+              - paragraph [ref=e101]:
+                - generic [ref=e102]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2019년
+              - generic [ref=e103]:
+                - generic [ref=e104]: 내 평가
+                - generic [ref=e105]:
+                  - button "흔한남매 1점으로 평가" [ref=e106] [cursor=pointer]: ☆
+                  - button "흔한남매 2점으로 평가" [ref=e107] [cursor=pointer]: ☆
+                  - button "흔한남매 3점으로 평가" [ref=e108] [cursor=pointer]: ☆
+                  - button "흔한남매 4점으로 평가" [ref=e109] [cursor=pointer]: ☆
+                  - button "흔한남매 5점으로 평가" [ref=e110] [cursor=pointer]: ☆
+                - generic [ref=e111]: 별점 선택
+          - article [ref=e112]:
+            - generic [ref=e113]:
+              - generic [ref=e114]: BOOK PATH · 02
+              - generic [ref=e115]: 흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식
+              - generic [ref=e116]: READING IS A JOURNEY
+            - generic [ref=e117]:
+              - generic [ref=e118]:
+                - text: 대출
+                - strong [ref=e119]: 230,923
+              - generic [ref=e120]: 자연과학 · KDC 400
+              - heading "흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식" [level=3] [ref=e121]
+              - paragraph [ref=e122]: "원작: 흔한남매 ;그림: 유난희 · 2020"
+              - paragraph [ref=e123]: 자연과학 · KDC 400 분야에서 공공도서 대출 230,923건을 기록했어요.
+              - paragraph [ref=e124]:
+                - generic [ref=e125]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2020년
+              - generic [ref=e126]:
+                - generic [ref=e127]: 내 평가
+                - generic [ref=e128]:
+                  - button "흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식 1점으로 평가" [ref=e129] [cursor=pointer]: ☆
+                  - button "흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식 2점으로 평가" [ref=e130] [cursor=pointer]: ☆
+                  - button "흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식 3점으로 평가" [ref=e131] [cursor=pointer]: ☆
+                  - button "흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식 4점으로 평가" [ref=e132] [cursor=pointer]: ☆
+                  - button "흔한남매의 흔한 호기심 :일상에서 만나는 과학 상식 5점으로 평가" [ref=e133] [cursor=pointer]: ☆
+                - generic [ref=e134]: 별점 선택
+          - article [ref=e135]:
+            - generic [ref=e136]:
+              - generic [ref=e137]: BOOK PATH · 03
+              - generic [ref=e138]: 에그박사 :Egg&bugs
+              - generic [ref=e139]: READING IS A JOURNEY
+            - generic [ref=e140]:
+              - generic [ref=e141]:
+                - text: 대출
+                - strong [ref=e142]: 208,572
+              - generic [ref=e143]: 자연과학 · KDC 472
+              - heading "에그박사 :Egg&bugs" [level=3] [ref=e144]
+              - paragraph [ref=e145]: "원작: 에그박사 ;그림: 홍종현 · 2020"
+              - paragraph [ref=e146]: 자연과학 · KDC 472 분야에서 공공도서 대출 208,572건을 기록했어요.
+              - paragraph [ref=e147]:
+                - generic [ref=e148]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2020년
+              - generic [ref=e149]:
+                - generic [ref=e150]: 내 평가
+                - generic [ref=e151]:
+                  - button "에그박사 :Egg&bugs 1점으로 평가" [ref=e152] [cursor=pointer]: ☆
+                  - button "에그박사 :Egg&bugs 2점으로 평가" [ref=e153] [cursor=pointer]: ☆
+                  - button "에그박사 :Egg&bugs 3점으로 평가" [ref=e154] [cursor=pointer]: ☆
+                  - button "에그박사 :Egg&bugs 4점으로 평가" [ref=e155] [cursor=pointer]: ☆
+                  - button "에그박사 :Egg&bugs 5점으로 평가" [ref=e156] [cursor=pointer]: ☆
+                - generic [ref=e157]: 별점 선택
+          - article [ref=e158]:
+            - generic [ref=e159]:
+              - generic [ref=e160]: BOOK PATH · 04
+              - generic [ref=e161]: 소년이 온다
+              - generic [ref=e162]: READING IS A JOURNEY
+            - generic [ref=e163]:
+              - generic [ref=e164]:
+                - text: 평점
+                - strong [ref=e165]: "4.7"
+              - generic [ref=e166]: 소설
+              - heading "소년이 온다" [level=3] [ref=e167]
+              - paragraph [ref=e168]: 한강 · 1998
+              - paragraph [ref=e169]: 소설 분야 · 보조 데이터 평점 4.7점.
+              - paragraph [ref=e170]:
+                - generic [ref=e171]: ✳
+                - text: 보조 데이터 평점 4.7 참고
+              - generic [ref=e172]:
+                - generic [ref=e173]: 내 평가
+                - generic [ref=e174]:
+                  - button "소년이 온다 1점으로 평가" [ref=e175] [cursor=pointer]: ☆
+                  - button "소년이 온다 2점으로 평가" [ref=e176] [cursor=pointer]: ☆
+                  - button "소년이 온다 3점으로 평가" [ref=e177] [cursor=pointer]: ☆
+                  - button "소년이 온다 4점으로 평가" [ref=e178] [cursor=pointer]: ☆
+                  - button "소년이 온다 5점으로 평가" [ref=e179] [cursor=pointer]: ☆
+                - generic [ref=e180]: 별점 선택
+          - article [ref=e181]:
+            - generic [ref=e182]:
+              - generic [ref=e183]: BOOK PATH · 05
+              - generic [ref=e184]: 흔한남매 과학 탐험대
+              - generic [ref=e185]: READING IS A JOURNEY
+            - generic [ref=e186]:
+              - generic [ref=e187]:
+                - text: 대출
+                - strong [ref=e188]: 192,205
+              - generic [ref=e189]: 자연과학 · KDC 400
+              - heading "흔한남매 과학 탐험대" [level=3] [ref=e190]
+              - paragraph [ref=e191]: "원작: 흔한남매 ;임혜영 · 2021"
+              - paragraph [ref=e192]: 자연과학 · KDC 400 분야에서 공공도서 대출 192,205건을 기록했어요.
+              - paragraph [ref=e193]:
+                - generic [ref=e194]: ✳
+                - text: 공공데이터 대출 상위 도서 · 2021년
+              - generic [ref=e195]:
+                - generic [ref=e196]: 내 평가
+                - generic [ref=e197]:
+                  - button "흔한남매 과학 탐험대 1점으로 평가" [ref=e198] [cursor=pointer]: ☆
+                  - button "흔한남매 과학 탐험대 2점으로 평가" [ref=e199] [cursor=pointer]: ☆
+                  - button "흔한남매 과학 탐험대 3점으로 평가" [ref=e200] [cursor=pointer]: ☆
+                  - button "흔한남매 과학 탐험대 4점으로 평가" [ref=e201] [cursor=pointer]: ☆
+                  - button "흔한남매 과학 탐험대 5점으로 평가" [ref=e202] [cursor=pointer]: ☆
+                - generic [ref=e203]: 별점 선택
+          - article [ref=e204]:
+            - generic [ref=e205]:
+              - generic [ref=e206]: BOOK PATH · 06
+              - generic [ref=e207]: 지적 대화를 위한 넓고 얕은 지식
+              - generic [ref=e208]: READING IS A JOURNEY
+            - generic [ref=e209]:
+              - generic [ref=e210]:
+                - text: 평점
+                - strong [ref=e211]: "4.6"
+              - generic [ref=e212]: 인문/역사
+              - heading "지적 대화를 위한 넓고 얕은 지식" [level=3] [ref=e213]
+              - paragraph [ref=e214]: 채사장 · 2004
+              - paragraph [ref=e215]: 인문/역사 분야 · 보조 데이터 평점 4.6점.
+              - paragraph [ref=e216]:
+                - generic [ref=e217]: ✳
+                - text: 보조 데이터 평점 4.6 참고
+              - generic [ref=e218]:
+                - generic [ref=e219]: 내 평가
+                - generic [ref=e220]:
+                  - button "지적 대화를 위한 넓고 얕은 지식 1점으로 평가" [ref=e221] [cursor=pointer]: ☆
+                  - button "지적 대화를 위한 넓고 얕은 지식 2점으로 평가" [ref=e222] [cursor=pointer]: ☆
+                  - button "지적 대화를 위한 넓고 얕은 지식 3점으로 평가" [ref=e223] [cursor=pointer]: ☆
+                  - button "지적 대화를 위한 넓고 얕은 지식 4점으로 평가" [ref=e224] [cursor=pointer]: ☆
+                  - button "지적 대화를 위한 넓고 얕은 지식 5점으로 평가" [ref=e225] [cursor=pointer]: ☆
+                - generic [ref=e226]: 별점 선택
+          - article [ref=e227]:
+            - generic [ref=e228]:
+              - generic [ref=e229]: BOOK PATH · 07
+              - generic [ref=e230]: 물고기는 존재하지 않는다
+              - generic [ref=e231]: READING IS A JOURNEY
+            - generic [ref=e232]:
+              - generic [ref=e233]:
+                - text: 평점
+                - strong [ref=e234]: "4.6"
+              - generic [ref=e235]: 과학
+              - heading "물고기는 존재하지 않는다" [level=3] [ref=e236]
+              - paragraph [ref=e237]: 룰루 밀러 · 2003
+              - paragraph [ref=e238]: 과학 분야 · 보조 데이터 평점 4.6점.
+              - paragraph [ref=e239]:
+                - generic [ref=e240]: ✳
+                - text: 보조 데이터 평점 4.6 참고
+              - generic [ref=e241]:
+                - generic [ref=e242]: 내 평가
+                - generic [ref=e243]:
+                  - button "물고기는 존재하지 않는다 1점으로 평가" [ref=e244] [cursor=pointer]: ☆
+                  - button "물고기는 존재하지 않는다 2점으로 평가" [ref=e245] [cursor=pointer]: ☆
+                  - button "물고기는 존재하지 않는다 3점으로 평가" [ref=e246] [cursor=pointer]: ☆
+                  - button "물고기는 존재하지 않는다 4점으로 평가" [ref=e247] [cursor=pointer]: ☆
+                  - button "물고기는 존재하지 않는다 5점으로 평가" [ref=e248] [cursor=pointer]: ☆
+                - generic [ref=e249]: 별점 선택
+          - article [ref=e250]:
+            - generic [ref=e251]:
+              - generic [ref=e252]: BOOK PATH · 08
+              - generic [ref=e253]: Thinking, Fast and Slow
+              - generic [ref=e254]: READING IS A JOURNEY
+            - generic [ref=e255]:
+              - generic [ref=e256]:
+                - text: 평점
+                - strong [ref=e257]: "4.6"
+              - generic [ref=e258]: Psychology
+              - heading "Thinking, Fast and Slow" [level=3] [ref=e259]
+              - paragraph [ref=e260]: Daniel Kahneman · 2004
+              - paragraph [ref=e261]: Psychology 분야 · 보조 데이터 평점 4.6점.
+              - paragraph [ref=e262]:
+                - generic [ref=e263]: ✳
+                - text: 보조 데이터 평점 4.6 참고
+              - generic [ref=e264]:
+                - generic [ref=e265]: 내 평가
+                - generic [ref=e266]:
+                  - button "Thinking, Fast and Slow 1점으로 평가" [ref=e267] [cursor=pointer]: ☆
+                  - button "Thinking, Fast and Slow 2점으로 평가" [ref=e268] [cursor=pointer]: ☆
+                  - button "Thinking, Fast and Slow 3점으로 평가" [ref=e269] [cursor=pointer]: ☆
+                  - button "Thinking, Fast and Slow 4점으로 평가" [ref=e270] [cursor=pointer]: ☆
+                  - button "Thinking, Fast and Slow 5점으로 평가" [ref=e271] [cursor=pointer]: ☆
+                - generic [ref=e272]: 별점 선택
+          - article [ref=e273]:
+            - generic [ref=e274]:
+              - generic [ref=e275]: BOOK PATH · 09
+              - generic [ref=e276]: 트렌드 코리아 2024
+              - generic [ref=e277]: READING IS A JOURNEY
+            - generic [ref=e278]:
+              - generic [ref=e279]:
+                - text: 평점
+                - strong [ref=e280]: "4.6"
+              - generic [ref=e281]: 경제/경영
+              - heading "트렌드 코리아 2024" [level=3] [ref=e282]
+              - paragraph [ref=e283]: 김난도 · 2007
+              - paragraph [ref=e284]: 경제/경영 분야 · 보조 데이터 평점 4.6점.
+              - paragraph [ref=e285]:
+                - generic [ref=e286]: ✳
+                - text: 보조 데이터 평점 4.6 참고
+              - generic [ref=e287]:
+                - generic [ref=e288]: 내 평가
+                - generic [ref=e289]:
+                  - button "트렌드 코리아 2024 1점으로 평가" [ref=e290] [cursor=pointer]: ☆
+                  - button "트렌드 코리아 2024 2점으로 평가" [ref=e291] [cursor=pointer]: ☆
+                  - button "트렌드 코리아 2024 3점으로 평가" [ref=e292] [cursor=pointer]: ☆
+                  - button "트렌드 코리아 2024 4점으로 평가" [ref=e293] [cursor=pointer]: ☆
+                  - button "트렌드 코리아 2024 5점으로 평가" [ref=e294] [cursor=pointer]: ☆
+                - generic [ref=e295]: 별점 선택
+          - article [ref=e296]:
+            - generic [ref=e297]:
+              - generic [ref=e298]: BOOK PATH · 10
+              - generic [ref=e299]: The Hobbit
+              - generic [ref=e300]: READING IS A JOURNEY
+            - generic [ref=e301]:
+              - generic [ref=e302]:
+                - text: 평점
+                - strong [ref=e303]: "4.6"
+              - generic [ref=e304]: Fantasy
+              - heading "The Hobbit" [level=3] [ref=e305]
+              - paragraph [ref=e306]: J.R.R. Tolkien · 2007
+              - paragraph [ref=e307]: Fantasy 분야 · 보조 데이터 평점 4.6점.
+              - paragraph [ref=e308]:
+                - generic [ref=e309]: ✳
+                - text: 보조 데이터 평점 4.6 참고
+              - generic [ref=e310]:
+                - generic [ref=e311]: 내 평가
+                - generic [ref=e312]:
+                  - button "The Hobbit 1점으로 평가" [ref=e313] [cursor=pointer]: ☆
+                  - button "The Hobbit 2점으로 평가" [ref=e314] [cursor=pointer]: ☆
+                  - button "The Hobbit 3점으로 평가" [ref=e315] [cursor=pointer]: ☆
+                  - button "The Hobbit 4점으로 평가" [ref=e316] [cursor=pointer]: ☆
+                  - button "The Hobbit 5점으로 평가" [ref=e317] [cursor=pointer]: ☆
+                - generic [ref=e318]: 별점 선택
+          - article [ref=e319]:
+            - generic [ref=e320]:
+              - generic [ref=e321]: BOOK PATH · 11
+              - generic [ref=e322]: 사피엔스
+              - generic [ref=e323]: READING IS A JOURNEY
+            - generic [ref=e324]:
+              - generic [ref=e325]:
+                - text: 평점
+                - strong [ref=e326]: "4.6"
+              - generic [ref=e327]: 인문/역사
+              - heading "사피엔스" [level=3] [ref=e328]
+              - paragraph [ref=e329]: 유발 하라리 · 2017
+              - paragraph [ref=e330]: 인문/역사 분야 · 보조 데이터 평점 4.6점.
+              - paragraph [ref=e331]:
+                - generic [ref=e332]: ✳
+                - text: 보조 데이터 평점 4.6 참고
+              - generic [ref=e333]:
+                - generic [ref=e334]: 내 평가
+                - generic [ref=e335]:
+                  - button "사피엔스 1점으로 평가" [ref=e336] [cursor=pointer]: ☆
+                  - button "사피엔스 2점으로 평가" [ref=e337] [cursor=pointer]: ☆
+                  - button "사피엔스 3점으로 평가" [ref=e338] [cursor=pointer]: ☆
+                  - button "사피엔스 4점으로 평가" [ref=e339] [cursor=pointer]: ☆
+                  - button "사피엔스 5점으로 평가" [ref=e340] [cursor=pointer]: ☆
+                - generic [ref=e341]: 별점 선택
+          - article [ref=e342]:
+            - generic [ref=e343]:
+              - generic [ref=e344]: BOOK PATH · 12
+              - generic [ref=e345]: 역행자
+              - generic [ref=e346]: READING IS A JOURNEY
+            - generic [ref=e347]:
+              - generic [ref=e348]:
+                - text: 평점
+                - strong [ref=e349]: "4.6"
+              - generic [ref=e350]: 자기계발
+              - heading "역행자" [level=3] [ref=e351]
+              - paragraph [ref=e352]: 자청 · 2006
+              - paragraph [ref=e353]: 자기계발 분야 · 보조 데이터 평점 4.6점.
+              - paragraph [ref=e354]:
+                - generic [ref=e355]: ✳
+                - text: 보조 데이터 평점 4.6 참고
+              - generic [ref=e356]:
+                - generic [ref=e357]: 내 평가
+                - generic [ref=e358]:
+                  - button "역행자 1점으로 평가" [ref=e359] [cursor=pointer]: ☆
+                  - button "역행자 2점으로 평가" [ref=e360] [cursor=pointer]: ☆
+                  - button "역행자 3점으로 평가" [ref=e361] [cursor=pointer]: ☆
+                  - button "역행자 4점으로 평가" [ref=e362] [cursor=pointer]: ☆
+                  - button "역행자 5점으로 평가" [ref=e363] [cursor=pointer]: ☆
+                - generic [ref=e364]: 별점 선택
+        - button "더 많은 책 보기 (12권)" [ref=e365] [cursor=pointer]
+  - contentinfo [ref=e366]:
+    - button "책길." [ref=e367] [cursor=pointer]
+    - paragraph [ref=e368]: 공공데이터로 이어가는 나만의 독서 여정
+    - generic [ref=e369]: A SMALL STEP INTO A BIGGER WORLD OF BOOKS

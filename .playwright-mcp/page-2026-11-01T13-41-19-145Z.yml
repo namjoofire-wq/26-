@@ -1,0 +1,57 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "책길 홈" [ref=e4] [cursor=pointer]:
+      - /url: "#home"
+      - img [ref=e6]
+      - generic [ref=e9]: 책길.
+    - tablist "주요 화면" [ref=e10]:
+      - tab "책 추천" [ref=e11] [cursor=pointer]
+      - tab "수행평가" [selected] [ref=e12] [cursor=pointer]
+      - tab "사용 안내" [ref=e13] [cursor=pointer]
+      - tab "검색 맞춤" [ref=e14] [cursor=pointer]
+      - tab "내 취향" [ref=e15] [cursor=pointer]
+      - tab "데이터" [ref=e16] [cursor=pointer]
+      - tab "추천 방식" [ref=e17] [cursor=pointer]
+    - button "기본 CSV 7종 연결 완료" [ref=e413]:
+      - generic [ref=e20]: 기본 CSV 7종 연결 완료
+  - main [ref=e21]:
+    - tabpanel "수행평가" [ref=e728]:
+      - generic [ref=e729]:
+        - generic [ref=e730]:
+          - generic [ref=e731]: PROJECT BOOK FINDER
+          - heading "수행평가 주제에서 읽을 책의 실마리를 찾아요." [level=2] [ref=e733]:
+            - text: 수행평가 주제에서
+            - emphasis [ref=e734]: 읽을 책의 실마리를 찾아요.
+          - paragraph [ref=e735]: 과목·수행평가 주제·탐구 방향을 함께 분석해 관련 도서를 추천합니다. 중·고등학생 이상이 수행평가에 활용할 일반·청소년 도서를 우선해요.
+          - generic [ref=e736]: 01 과목 맥락과 주제 핵심 키워드 정리
+          - generic [ref=e737]: 02 탐구 방향에 맞는 책과 추천 근거 확인
+          - generic [ref=e738]: 03 입문·다른 관점·심화 책 조합
+        - generic [ref=e739]:
+          - generic [ref=e740]:
+            - generic [ref=e741]: 과목
+            - combobox "과목" [active] [ref=e742]
+            - generic [ref=e743]: 수행평가 주제 또는 탐구 질문
+            - searchbox "수행평가 주제 또는 탐구 질문" [ref=e744]
+            - generic [ref=e745]: 탐구 방향
+            - textbox "탐구 방향" [ref=e746]:
+              - /placeholder: "예: 인공지능의 긍정적·부정적 영향을 비교 분석"
+            - generic [ref=e747]:
+              - generic [ref=e748]:
+                - generic [ref=e749]: 선생님 평가 기준표 파일 (선택)
+                - paragraph [ref=e750]: Affine JSON, CSV UTF-8, JPG·PNG·WebP 사진을 올려주세요. CSV는 ‘평가 항목’과 ‘배점’ 열을 읽어요.
+              - generic [ref=e751]:
+                - generic [ref=e752] [cursor=pointer]: 기준표 파일 선택
+                - generic [ref=e753]: 선택된 파일 없음
+              - generic [ref=e754]: 사진은 브라우저에서 OCR로 읽혀요. 처음에는 인터넷 연결이 필요하고 사진 파일은 서버로 전송하지 않아요. 글자가 선명하고 반듯한 사진을 사용해 주세요. PDF는 지원하지 않아요.
+            - generic "수행평가 주제 예시" [ref=e755]:
+              - button "기후 변화와 바다" [ref=e756] [cursor=pointer]
+              - button "인공지능과 일자리" [ref=e757] [cursor=pointer]
+              - button "청소년 마음 건강" [ref=e758] [cursor=pointer]
+            - button "주제에 맞는 책 찾기" [ref=e759] [cursor=pointer]:
+              - text: 주제에 맞는 책 찾기
+              - generic [ref=e760]: ↗
+          - paragraph [ref=e761]: 평가 기준표를 올리면 배점이 높은 항목을 추천에 더 크게 반영해요. 과목·주제·탐구 방향도 함께 살펴봅니다.
+  - contentinfo [ref=e409]:
+    - button "책길." [ref=e410] [cursor=pointer]
+    - paragraph [ref=e411]: 공공데이터로 이어가는 나만의 독서 여정
+    - generic [ref=e412]: A SMALL STEP INTO A BIGGER WORLD OF BOOKS
