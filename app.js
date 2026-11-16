@@ -63,10 +63,12 @@ const ratingStorageKey = "bookpath-reading-ratings-v1";
 const searchHistoryStorageKey = "bookpath-search-history-v1";
 const taskUsefulnessStorageKey = "bookpath-task-usefulness-v1";
 const viewedBooksStorageKey = "bookpath-viewed-books-v1";
+const bookReviewsStorageKey = "bookpath-book-reviews-v1";
 let readingRatings = {};
 let searchHistory = [];
 let taskUsefulness = {};
 let viewedBookHistory = [];
+let bookReviews = {};
 let currentRankedBooks = [];
 let selectedBookKey = "";
 let currentInquiryQuestions = [];
@@ -82,6 +84,10 @@ try {
   const storedViews = JSON.parse(localStorage.getItem(viewedBooksStorageKey) || "[]");
   viewedBookHistory = Array.isArray(storedViews) ? storedViews.filter((entry) => typeof entry?.category === "string").slice(0, 100) : [];
 } catch { viewedBookHistory = []; }
+try {
+  const storedReviews = JSON.parse(localStorage.getItem(bookReviewsStorageKey) || "{}");
+  bookReviews = storedReviews && typeof storedReviews === "object" && !Array.isArray(storedReviews) ? storedReviews : {};
+} catch { bookReviews = {}; }
 
 function escapeHTML(value) {
   return String(value ?? "").replace(/[&<>"']/g, (character) => ({
@@ -105,6 +111,24 @@ function recordBookView(book) {
   viewedBookHistory.unshift({ title: book.title, category: categoryDisplayLabel(book), viewedAt: Date.now() });
   viewedBookHistory = viewedBookHistory.slice(0, 100);
   try { localStorage.setItem(viewedBooksStorageKey, JSON.stringify(viewedBookHistory)); } catch { /* Keep view history for this page session. */ }
+}
+
+function bookReviewsMarkup(bookKey) {
+  const reviews = Array.isArray(bookReviews[bookKey]) ? bookReviews[bookKey] : [];
+  const reviewCards = [...reviews].sort((a, b) => b.createdAt - a.createdAt).map((review) => {
+    const date = new Date(review.createdAt).toLocaleDateString("ko-KR", { year: "numeric", month: "long", day: "numeric" });
+    const stars = review.rating ? `${"★".repeat(review.rating)}${"☆".repeat(5 - review.rating)}` : "별점 없음";
+    return `<article class="book-review"><div class="review-author-row"><span class="review-avatar" aria-hidden="true">${escapeHTML((review.name || "익명").slice(0, 1))}</span><div class="review-author"><strong>${escapeHTML(review.name || "익명")}</strong><time>${escapeHTML(date)}</time></div><span class="review-rating" aria-label="${review.rating ? `${review.rating}점` : "별점 없음"}">${stars}</span></div><p>${escapeHTML(review.text)}</p></article>`;
+  }).join("");
+  return `<section class="book-discussion" aria-labelledby="book-discussion-title">
+    <div class="discussion-heading"><div><span class="insight-overline">BOOK DISCUSSION</span><h2 id="book-discussion-title">이 책을 읽은 사람들과 이야기 나눠요</h2><p>인상 깊었던 장면이나 생각을 편하게 남겨주세요.</p></div><span class="discussion-count">${reviews.length}개 리뷰</span></div>
+    <form class="review-form" id="book-review-form" data-review-book-key="${escapeHTML(bookKey)}">
+      <div class="review-form-fields"><label>닉네임<input name="review-name" type="text" maxlength="20" placeholder="예: 책 읽는 토끼" autocomplete="nickname" required></label><label>별점<select name="review-rating"><option value="0">별점 선택 (선택)</option><option value="5">★★★★★ · 아주 좋았어요</option><option value="4">★★★★☆ · 좋았어요</option><option value="3">★★★☆☆ · 보통이에요</option><option value="2">★★☆☆☆ · 아쉬웠어요</option><option value="1">★☆☆☆☆ · 잘 맞지 않았어요</option></select></label></div>
+      <label class="review-text-label" for="review-text">리뷰 내용</label><textarea id="review-text" name="review-text" rows="4" maxlength="500" placeholder="책을 읽고 떠오른 생각이나 다른 독자에게 전하고 싶은 이야기를 적어주세요." required></textarea>
+      <div class="review-form-footer"><span>500자 이내 · 작성한 리뷰는 현재 이 브라우저에만 저장돼요.</span><button class="search-submit" type="submit">리뷰 남기기 <span aria-hidden="true">↗</span></button></div>
+    </form>
+    <div class="book-review-list" aria-live="polite">${reviewCards || `<div class="review-empty"><span aria-hidden="true">✳</span><p>아직 리뷰가 없어요. 이 책의 첫 번째 이야기를 남겨보세요.</p></div>`}</div>
+  </section>`;
 }
 
 function showView(name) {
@@ -869,6 +893,7 @@ function renderBookDetail(bookKey, countView = true) {
       <section class="task-evaluation-panel"><span class="insight-overline">STUDENT FEEDBACK</span><h2>수행평가에 도움이 됐나요?</h2><p>이 책이 주제 이해나 자료 조사에 얼마나 도움이 되었는지 알려주세요.</p><div class="task-feedback-options">${[["helpful", "도움 됐어요"], ["somewhat", "조금 도움 됐어요"], ["not-helpful", "도움 되지 않았어요"]].map(([value, label]) => `<button type="button" data-task-feedback="${value}" aria-pressed="${feedback === value}">${label}</button>`).join("")}</div><p class="task-feedback-status">${feedback ? `평가 저장됨 · ${feedbackLabels[feedback]}` : "평가는 이 브라우저에 저장되어 다음 수행평가 추천에 반영돼요."}</p></section>
     </div>
     ${inquiryMarkup}
+    ${bookReviewsMarkup(bookKey)}
     <section class="purchase-panel"><div><span class="insight-overline">FIND THIS BOOK</span><h2>구매처에서 책 찾기</h2><p>제목과 저자로 서점 검색을 열어요. 가격과 재고는 각 서점에서 확인해 주세요.</p></div><div class="purchase-links">${purchaseStores.map(([name, url]) => `<a href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer">${name}<span aria-hidden="true">↗</span></a>`).join("")}</div></section>
     ${bundle.length ? `<section class="detail-bundle-panel">${balancedBundleMarkup(bundle, "detail-bundle-title")}</section>` : `<section class="detail-bundle-panel detail-bundle-empty"><h2>한 주제를 세 가지 관점으로 읽어요</h2><p>이 책과 주제가 가까운 책이 더 모이면 입문·다른 관점·심화 조합을 보여드릴게요.</p></section>`}
   </article>`;
@@ -1041,6 +1066,23 @@ document.addEventListener("click", (event) => {
   taskUsefulness[selectedBookKey] = button.dataset.taskFeedback;
   try { localStorage.setItem(taskUsefulnessStorageKey, JSON.stringify(taskUsefulness)); } catch { /* Keep the evaluation for this page session. */ }
   renderBookDetail(selectedBookKey, false);
+});
+
+bookDetailContent.addEventListener("submit", (event) => {
+  const form = event.target.closest("#book-review-form");
+  if (!form) return;
+  event.preventDefault();
+  const formData = new FormData(form);
+  const name = String(formData.get("review-name") || "").trim();
+  const text = String(formData.get("review-text") || "").trim();
+  const rating = Math.max(0, Math.min(5, Number(formData.get("review-rating")) || 0));
+  const bookKey = form.dataset.reviewBookKey;
+  if (!name || !text || !bookKey) return;
+  const reviews = Array.isArray(bookReviews[bookKey]) ? bookReviews[bookKey] : [];
+  reviews.unshift({ name: name.slice(0, 20), text: text.slice(0, 500), rating, createdAt: Date.now() });
+  bookReviews[bookKey] = reviews.slice(0, 100);
+  try { localStorage.setItem(bookReviewsStorageKey, JSON.stringify(bookReviews)); } catch { /* Keep reviews for this page session. */ }
+  renderBookDetail(bookKey, false);
 });
 
 readingInsights.addEventListener("click", (event) => {
