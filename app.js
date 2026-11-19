@@ -64,15 +64,19 @@ const searchHistoryStorageKey = "bookpath-search-history-v1";
 const taskUsefulnessStorageKey = "bookpath-task-usefulness-v1";
 const viewedBooksStorageKey = "bookpath-viewed-books-v1";
 const bookReviewsStorageKey = "bookpath-book-reviews-v1";
+const readingReflectionsStorageKey = "bookpath-reading-reflections-v1";
 let readingRatings = {};
 let searchHistory = [];
 let taskUsefulness = {};
 let viewedBookHistory = [];
 let bookReviews = {};
+let readingReflections = {};
 let currentRankedBooks = [];
 let selectedBookKey = "";
 let currentInquiryQuestions = [];
 let selectedInquiryIndex = -1;
+let activeReflectionDraft = null;
+let sharedReflection = readSharedReflection();
 
 try { readingRatings = JSON.parse(localStorage.getItem(ratingStorageKey) || "{}"); } catch { readingRatings = {}; }
 try { taskUsefulness = JSON.parse(localStorage.getItem(taskUsefulnessStorageKey) || "{}"); } catch { taskUsefulness = {}; }
@@ -88,6 +92,10 @@ try {
   const storedReviews = JSON.parse(localStorage.getItem(bookReviewsStorageKey) || "{}");
   bookReviews = storedReviews && typeof storedReviews === "object" && !Array.isArray(storedReviews) ? storedReviews : {};
 } catch { bookReviews = {}; }
+try {
+  const storedReflections = JSON.parse(localStorage.getItem(readingReflectionsStorageKey) || "{}");
+  readingReflections = storedReflections && typeof storedReflections === "object" && !Array.isArray(storedReflections) ? storedReflections : {};
+} catch { readingReflections = {}; }
 
 function escapeHTML(value) {
   return String(value ?? "").replace(/[&<>"']/g, (character) => ({
@@ -129,6 +137,129 @@ function bookReviewsMarkup(bookKey) {
     </form>
     <div class="book-review-list" aria-live="polite">${reviewCards || `<div class="review-empty"><span aria-hidden="true">✳</span><p>아직 리뷰가 없어요. 이 책의 첫 번째 이야기를 남겨보세요.</p></div>`}</div>
   </section>`;
+}
+
+function readSharedReflection() {
+  try {
+    const encoded = new URLSearchParams(location.hash.slice(1)).get("reading")?.replace(/-/g, "+").replace(/_/g, "/");
+    if (!encoded) return null;
+    const padded = encoded.padEnd(Math.ceil(encoded.length / 4) * 4, "=");
+    const bytes = Uint8Array.from(atob(padded), (character) => character.charCodeAt(0));
+    const entry = JSON.parse(new TextDecoder().decode(bytes));
+    if (entry.version !== 1 || !entry.bookTitle || !entry.question || !entry.before || !entry.after) return null;
+    return {
+      bookTitle: String(entry.bookTitle).slice(0, 180),
+      name: String(entry.name || "익명").slice(0, 20),
+      question: String(entry.question).slice(0, 300),
+      before: String(entry.before).slice(0, 1000),
+      after: String(entry.after).slice(0, 1000),
+      createdAt: Number(entry.createdAt) || Date.now(),
+    };
+  } catch { return null; }
+}
+
+function reflectionKeywords(text) {
+  const stopWords = new Set(["그리고", "하지만", "그래서", "정말", "조금", "어떤", "이런", "저런", "그런", "것이다", "있다", "없다", "같다", "하다", "되다", "읽다", "읽", "책", "생각", "내용", "나는", "제가", "우리", "그것", "이것", "저것", "때문", "통해", "대한", "위해", "나니", "이후", "전후", "처음", "모두", "알다", "알았", "알았다", "알게", "말하"]);
+  const counts = new Map();
+  String(text).toLowerCase().split(/[^가-힣a-z0-9]+/u).filter(Boolean).forEach((raw) => {
+    let word = raw;
+    for (const ending of ["해졌어요", "해졌다", "하다는", "으로부터", "에게서는", "에서는", "에게서", "으로는", "했습니다", "이었다", "이라고", "하는데", "하면서", "해지는", "해진", "하였다", "았다", "었다", "였다", "에게", "에서", "으로", "부터", "까지", "처럼", "보다", "에는", "에도", "하고", "하며", "하면", "하게", "한다", "했다", "하는", "한", "고", "은", "는", "이", "가", "을", "를", "의", "에", "와", "과", "로", "도", "만", "께", "랑"]) {
+      if (word.length > ending.length && word.endsWith(ending)) { word = word.slice(0, -ending.length); break; }
+    }
+    if (Array.from(word).length < 2 || stopWords.has(word) || /^(?:오늘|이야기|질문|답변|말하|알게|다르|같은)$/.test(word) || /^\d+$/.test(word)) return;
+    counts.set(word, (counts.get(word) || 0) + 1);
+  });
+  return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko")).slice(0, 8).map(([word]) => word);
+}
+
+function reflectionPerspectives(text) {
+  const signals = {
+    "개인 경험": /나 자신|개인|내가|나의|삶|경험|감정|마음/,
+    "사회·제도": /사회|정부|제도|정책|학교|기업|법|시스템/,
+    "과학·기술": /과학|기술|인공지능|데이터|연구|기계|디지털/,
+    "자연·환경": /자연|환경|기후|생태|동물|식물|지구|바다/,
+    "경제·일": /경제|돈|소비|노동|직업|일자리|시장|가난/,
+    "공동체·관계": /가족|친구|사람들|공동체|관계|타인|우리|이웃/,
+    "권리·공정": /권리|공정|정의|평등|차별|자유|책임|인권/,
+  };
+  return Object.entries(signals).filter(([, pattern]) => pattern.test(text)).map(([label]) => label);
+}
+
+function reflectionClaimStyle(text) {
+  const inquiry = /궁금|모르겠|왜\b|어떨까|일까\?|질문|알고 싶/iu.test(text);
+  const concern = /걱정|우려|위험|문제|불공정|해롭|반대|부정적/iu.test(text);
+  const support = /필요|해야|중요|긍정적|도움|좋은|찬성|가능성|바람직/iu.test(text);
+  if (inquiry && !concern && !support) return "질문·탐색";
+  if (concern && support) return "장단점을 함께 고려";
+  if (concern) return "문제·우려에 주목";
+  if (support) return "가능성·필요성을 강조";
+  return "표현 단서가 뚜렷하지 않음";
+}
+
+function reflectionAnalysisMarkup(entry) {
+  const beforeKeywords = reflectionKeywords(entry.before);
+  const afterKeywords = reflectionKeywords(entry.after);
+  const added = afterKeywords.filter((word) => !beforeKeywords.includes(word));
+  const retained = afterKeywords.filter((word) => beforeKeywords.includes(word));
+  const dropped = beforeKeywords.filter((word) => !afterKeywords.includes(word));
+  const beforePerspectives = reflectionPerspectives(entry.before);
+  const afterPerspectives = reflectionPerspectives(entry.after);
+  const addedPerspectives = afterPerspectives.filter((label) => !beforePerspectives.includes(label));
+  const beforeStyle = reflectionClaimStyle(entry.before);
+  const afterStyle = reflectionClaimStyle(entry.after);
+  const summary = added.length || addedPerspectives.length
+    ? `${retained.length ? `읽기 전 생각에서 ‘${retained.slice(0, 2).map(escapeHTML).join("·")}’라는 키워드가 이어지고, ` : ""}${added.length ? `새롭게 더해진 키워드는 ‘${added.slice(0, 3).map(escapeHTML).join("·")}’예요.` : "새로운 관점 단서가 나타났어요."}${addedPerspectives.length ? ` 새 관점 단서는 ‘${addedPerspectives.slice(0, 2).map(escapeHTML).join("·")}’예요.` : ""}`
+    : `읽기 전후에 ‘${retained.slice(0, 3).map(escapeHTML).join("·") || "주요 표현"}’이 이어져요. 책을 읽은 뒤에도 처음 생각의 중심이 유지된 것으로 보여요.`;
+  const chips = (items, empty) => items.length ? items.map((item) => `<span>${escapeHTML(item)}</span>`).join("") : `<span class="reflection-no-signal">${empty}</span>`;
+  return `<section class="reflection-analysis" aria-label="읽기 전후 생각 변화 분석"><div class="reflection-analysis-heading"><span class="insight-overline">READING CHANGE REPORT</span><span class="reflection-analysis-mark">비교 분석</span></div><p class="reflection-summary">${summary}</p><div class="reflection-analysis-grid"><div><h4>새롭게 등장한 키워드</h4><div class="reflection-chips">${chips(added.slice(0, 5), "뚜렷한 새 키워드가 없어요")}</div></div><div><h4>이어진 핵심 키워드</h4><div class="reflection-chips">${chips(retained.slice(0, 5), "겹치는 키워드가 적어요")}</div></div><div><h4>관점 단서</h4><p>${escapeHTML(beforePerspectives.join(" · ") || "뚜렷한 단서 없음")} <span aria-hidden="true">→</span> ${escapeHTML(afterPerspectives.join(" · ") || "뚜렷한 단서 없음")}</p>${addedPerspectives.length ? `<small>새로 더해진 관점 · ${addedPerspectives.map(escapeHTML).join(" · ")}</small>` : ""}</div><div><h4>주장 표현</h4><p>${escapeHTML(beforeStyle)} <span aria-hidden="true">→</span> ${escapeHTML(afterStyle)}</p></div></div>${dropped.length ? `<p class="reflection-analysis-note">읽기 전에는 있었지만 이후 답변에서 줄어든 키워드: ${dropped.slice(0, 4).map(escapeHTML).join(" · ")}</p>` : ""}<p class="reflection-disclaimer">자동 비교는 답변에 실제로 쓰인 단어와 표현을 기준으로 정리한 참고 결과예요. 생각의 정답이나 실제 관점 변화를 단정하지 않아요.</p></section>`;
+}
+
+function reflectionRecordMarkup(entry, bookKey, shared = false) {
+  const date = new Date(entry.createdAt).toLocaleDateString("ko-KR", { year: "numeric", month: "long", day: "numeric" });
+  return `<article class="reflection-record${shared ? " shared-reflection-record" : ""}"><div class="reflection-record-meta"><span>${shared ? "공유받은 독서 기록" : "나의 독서 기록"}</span><span>${escapeHTML(entry.name || "익명")} · ${escapeHTML(date)}</span></div><h3>${escapeHTML(entry.question)}</h3><div class="reflection-answer-grid"><section><h4>읽기 전</h4><p>${escapeHTML(entry.before)}</p></section><section><h4>읽은 후</h4><p>${escapeHTML(entry.after)}</p></section></div>${reflectionAnalysisMarkup(entry)}${!shared ? `<div class="reflection-share-row"><button type="button" class="reflection-share-button" data-share-reflection="${escapeHTML(bookKey)}" data-reflection-id="${escapeHTML(entry.id)}">이 기록 공유하기</button><span data-reflection-share-status="${escapeHTML(entry.id)}" aria-live="polite"></span></div>` : `<p class="shared-reflection-note">이 링크를 통해 공유된 기록입니다.</p>`}</article>`;
+}
+
+async function shareReadingReflection(bookKey, reflectionId, button) {
+  const entry = (readingReflections[bookKey] || []).find((reflection) => reflection.id === reflectionId);
+  const book = currentRankedBooks.find((item) => titleKey(item.title) === bookKey);
+  if (!entry || !book) return;
+  const payload = { version: 1, bookTitle: book.title, name: entry.name, question: entry.question, before: entry.before, after: entry.after, createdAt: entry.createdAt };
+  const bytes = new TextEncoder().encode(JSON.stringify(payload));
+  const binary = Array.from(bytes, (byte) => String.fromCharCode(byte)).join("");
+  const encoded = btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+  const url = new URL(location.href);
+  url.hash = `reading=${encoded}`;
+  const status = button.closest(".reflection-share-row")?.querySelector(`[data-reflection-share-status="${CSS.escape(reflectionId)}"]`);
+  try {
+    if (navigator.share) {
+      await navigator.share({ title: `${book.title} 독서 생각 기록`, text: "책길에서 읽기 전·후 생각을 비교해 보세요.", url: url.href });
+      if (status) status.textContent = "공유 창을 열었어요.";
+    } else {
+      await navigator.clipboard.writeText(url.href);
+      if (status) status.textContent = "공유 링크를 복사했어요.";
+    }
+  } catch (error) {
+    if (error.name !== "AbortError" && status) status.innerHTML = `복사에 실패했어요. 아래 링크를 직접 선택해 복사해 주세요.<input class="reflection-copy-fallback" type="text" readonly aria-label="독서 기록 공유 링크" value="${escapeHTML(url.href)}">`;
+  }
+}
+
+function readingReflectionMarkup(book, bookKey) {
+  const records = Array.isArray(readingReflections[bookKey]) ? readingReflections[bookKey] : [];
+  const current = activeReflectionDraft?.bookKey === bookKey
+    ? activeReflectionDraft
+    : records[0] || null;
+  const isBefore = !current || !current.before;
+  const question = current?.question || currentInquiryQuestions[0] || `‘${book.title}’에서 가장 중요하게 다루는 문제는 무엇이라고 생각하나요?`;
+  const formMarkup = isBefore
+    ? `<form class="reflection-form" id="reflection-before-form" data-reflection-book-key="${escapeHTML(bookKey)}"><div class="reflection-form-intro"><span class="reflection-step">01 · 읽기 전</span><p>책을 읽기 전에 지금 떠오르는 생각을 솔직하게 적어보세요. 다 읽은 뒤에도 같은 질문에 답하게 됩니다.</p></div><label for="reflection-question">책길 추천 질문 <span>자동 제안이며 직접 고쳐도 괜찮아요</span></label><textarea id="reflection-question" name="reflection-question" rows="2" maxlength="300" required>${escapeHTML(question)}</textarea><label for="reflection-before-answer">지금 나의 생각</label><textarea id="reflection-before-answer" name="reflection-before-answer" rows="4" maxlength="1000" placeholder="지금 알고 있는 것, 예상하는 점, 궁금한 점을 적어보세요." required></textarea><div class="reflection-form-footer"><label for="reflection-name">공유할 닉네임 <span>선택 사항</span></label><input id="reflection-name" name="reflection-name" maxlength="20" placeholder="익명" autocomplete="nickname"><button class="search-submit" type="submit">읽기 전 생각 저장하기 <span aria-hidden="true">↗</span></button></div></form>`
+    : current.after
+      ? `<div class="reflection-complete-note"><span class="reflection-step">읽기 전·후 기록 완료</span><p>두 답변을 비교해 생각의 변화와 이어진 점을 아래에 정리했어요.</p></div>`
+      : `<div class="reflection-before-saved"><span class="reflection-step">01 · 읽기 전 생각 저장됨</span><h3>${escapeHTML(current.question)}</h3><p>${escapeHTML(current.before)}</p><span class="reflection-step reflection-step-next">02 · 책을 다 읽은 후</span><p class="reflection-reading-hint">위와 같은 질문을 보며, 책을 읽은 뒤 생각이 어떻게 달라졌는지 적어보세요.</p></div><form class="reflection-form reflection-after-form" id="reflection-after-form" data-reflection-book-key="${escapeHTML(bookKey)}" data-reflection-id="${escapeHTML(current.id)}"><label for="reflection-after-answer">읽은 후 나의 생각</label><textarea id="reflection-after-answer" name="reflection-after-answer" rows="4" maxlength="1000" placeholder="새롭게 알게 된 점, 바뀐 생각, 더 확신하게 된 점을 적어보세요." required></textarea><div class="reflection-form-footer"><p>읽기 전과 같은 질문에 답해 주세요.</p><button class="search-submit" type="submit">변화 분석하고 기록하기 <span aria-hidden="true">↗</span></button></div></form>`;
+  const ownRecords = records.filter((entry) => entry.after && entry.id !== current?.id).map((entry) => reflectionRecordMarkup(entry, bookKey)).join("");
+  const sharedMarkup = sharedReflection && titleKey(sharedReflection.bookTitle) === bookKey
+    ? reflectionRecordMarkup(sharedReflection, bookKey, true)
+    : "";
+  return `<section class="reading-reflection" aria-labelledby="reading-reflection-title"><div class="reflection-heading"><div><span class="insight-overline">BEFORE & AFTER READING</span><h2 id="reading-reflection-title">읽기 전과 후, 생각의 변화를 기록해요</h2><p>같은 질문에 두 번 답하고, 달라진 키워드와 관점을 살펴보세요.</p></div><span class="reflection-bookmark" aria-hidden="true">01 / 02</span></div>${sharedMarkup}${formMarkup}${current?.after ? reflectionRecordMarkup(current, bookKey) : ""}${ownRecords ? `<details class="reflection-history"><summary>이전 독서 기록 ${records.filter((entry) => entry.after && entry.id !== current?.id).length}개</summary>${ownRecords}</details>` : ""}<div class="reflection-new-row"><button type="button" data-new-reflection="${escapeHTML(bookKey)}">다른 질문으로 새 기록 시작</button><p>기록은 이 브라우저에 저장돼요. 공유 링크에는 닉네임과 두 답변이 포함되어 링크를 받은 사람이 볼 수 있어요.</p></div></section>`;
 }
 
 function showView(name) {
@@ -707,11 +838,10 @@ function buildInquiryQuestions(book) {
     "이 사건은 서로 다른 집단에 어떤 영향을 남겼을까?",
     "이 역사를 오늘날의 사회 문제와 연결하면 어떤 교훈을 얻을 수 있을까?",
   ];
-  const focus = normalizedQueryTerms(`${topic} ${book.taskTopics || ""}`).slice(0, 2).join("·") || book.category || book.title;
   return [
-    `‘${focus}’는 사회와 사람들의 생활에 어떤 변화를 만들까?`,
-    `‘${focus}’와 관련된 선택이나 판단은 누구에게 이익과 부담을 주며, 공정할까?`,
-    `‘${focus}’에서 발견한 문제를 해결하기 위해 학교·지역사회·정부는 어떤 대안을 마련할 수 있을까?`,
+    "이 책이 다루는 주제에 대해 지금 어떤 생각을 갖고 있나요?",
+    "책의 내용 중 내 생각과 가장 다를 것 같은 부분은 무엇인가요?",
+    "책을 읽고 나면 지금 생각에 어떤 변화가 생길 것 같나요?",
   ];
 }
 
@@ -893,6 +1023,7 @@ function renderBookDetail(bookKey, countView = true) {
       <section class="task-evaluation-panel"><span class="insight-overline">STUDENT FEEDBACK</span><h2>수행평가에 도움이 됐나요?</h2><p>이 책이 주제 이해나 자료 조사에 얼마나 도움이 되었는지 알려주세요.</p><div class="task-feedback-options">${[["helpful", "도움 됐어요"], ["somewhat", "조금 도움 됐어요"], ["not-helpful", "도움 되지 않았어요"]].map(([value, label]) => `<button type="button" data-task-feedback="${value}" aria-pressed="${feedback === value}">${label}</button>`).join("")}</div><p class="task-feedback-status">${feedback ? `평가 저장됨 · ${feedbackLabels[feedback]}` : "평가는 이 브라우저에 저장되어 다음 수행평가 추천에 반영돼요."}</p></section>
     </div>
     ${inquiryMarkup}
+    ${readingReflectionMarkup(book, bookKey)}
     ${bookReviewsMarkup(bookKey)}
     <section class="purchase-panel"><div><span class="insight-overline">FIND THIS BOOK</span><h2>구매처에서 책 찾기</h2><p>제목과 저자로 서점 검색을 열어요. 가격과 재고는 각 서점에서 확인해 주세요.</p></div><div class="purchase-links">${purchaseStores.map(([name, url]) => `<a href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer">${name}<span aria-hidden="true">↗</span></a>`).join("")}</div></section>
     ${bundle.length ? `<section class="detail-bundle-panel">${balancedBundleMarkup(bundle, "detail-bundle-title")}</section>` : `<section class="detail-bundle-panel detail-bundle-empty"><h2>한 주제를 세 가지 관점으로 읽어요</h2><p>이 책과 주제가 가까운 책이 더 모이면 입문·다른 관점·심화 조합을 보여드릴게요.</p></section>`}
@@ -1039,6 +1170,27 @@ document.addEventListener("click", (event) => {
     document.querySelector(".recommend-section").scrollIntoView({ behavior: "smooth", block: "start" });
     return;
   }
+  const fallbackShareLink = event.target.closest(".reflection-copy-fallback");
+  if (fallbackShareLink) {
+    fallbackShareLink.select();
+    return;
+  }
+  const newReflectionButton = event.target.closest("[data-new-reflection]");
+  if (newReflectionButton) {
+    const bookKey = newReflectionButton.dataset.newReflection;
+    const questions = currentInquiryQuestions;
+    const records = readingReflections[bookKey] || [];
+    const nextQuestion = questions[records.length % Math.max(1, questions.length)] || "책에서 가장 새롭게 알게 된 점은 무엇이라고 생각하나요?";
+    activeReflectionDraft = { bookKey, question: nextQuestion };
+    renderBookDetail(bookKey, false);
+    bookDetailContent.querySelector("#reflection-before-form")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
+  const shareReflectionButton = event.target.closest("[data-share-reflection]");
+  if (shareReflectionButton) {
+    shareReadingReflection(shareReflectionButton.dataset.shareReflection, shareReflectionButton.dataset.reflectionId, shareReflectionButton);
+    return;
+  }
   const inquiryOption = event.target.closest("[data-inquiry-index]");
   if (inquiryOption) {
     selectedInquiryIndex = Number(inquiryOption.dataset.inquiryIndex);
@@ -1069,6 +1221,44 @@ document.addEventListener("click", (event) => {
 });
 
 bookDetailContent.addEventListener("submit", (event) => {
+  const beforeForm = event.target.closest("#reflection-before-form");
+  if (beforeForm) {
+    event.preventDefault();
+    const formData = new FormData(beforeForm);
+    const question = String(formData.get("reflection-question") || "").trim();
+    const before = String(formData.get("reflection-before-answer") || "").trim();
+    if (!question || !before) return;
+    const bookKey = beforeForm.dataset.reflectionBookKey;
+    const records = Array.isArray(readingReflections[bookKey]) ? readingReflections[bookKey] : [];
+    const entry = {
+      id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+      question: question.slice(0, 300),
+      before: before.slice(0, 1000),
+      after: "",
+      name: String(formData.get("reflection-name") || "익명").trim().slice(0, 20) || "익명",
+      createdAt: Date.now(),
+    };
+    readingReflections[bookKey] = [entry, ...records].slice(0, 20);
+    activeReflectionDraft = null;
+    try { localStorage.setItem(readingReflectionsStorageKey, JSON.stringify(readingReflections)); } catch { /* Keep this reading record for this page session. */ }
+    renderBookDetail(bookKey, false);
+    bookDetailContent.querySelector("#reflection-after-form")?.scrollIntoView({ behavior: "smooth", block: "center" });
+    return;
+  }
+  const afterForm = event.target.closest("#reflection-after-form");
+  if (afterForm) {
+    event.preventDefault();
+    const after = String(new FormData(afterForm).get("reflection-after-answer") || "").trim();
+    const bookKey = afterForm.dataset.reflectionBookKey;
+    const entry = (readingReflections[bookKey] || []).find((reflection) => reflection.id === afterForm.dataset.reflectionId);
+    if (!entry || !after) return;
+    entry.after = after.slice(0, 1000);
+    entry.completedAt = Date.now();
+    try { localStorage.setItem(readingReflectionsStorageKey, JSON.stringify(readingReflections)); } catch { /* Keep this reading record for this page session. */ }
+    renderBookDetail(bookKey, false);
+    bookDetailContent.querySelector(".reflection-record")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
   const form = event.target.closest("#book-review-form");
   if (!form) return;
   event.preventDefault();
@@ -1235,6 +1425,10 @@ async function loadBundledData() {
   } catch {
     uploadTitle.textContent = "기본 데이터를 불러오지 못했어요";
     uploadDescription.textContent = "아래 버튼으로 도서 CSV 파일을 직접 선택해 주세요.";
+  }
+  if (sharedReflection) {
+    const sharedBookKey = titleKey(sharedReflection.bookTitle);
+    if (currentRankedBooks.some((book) => titleKey(book.title) === sharedBookKey)) renderBookDetail(sharedBookKey, false);
   }
 }
 
